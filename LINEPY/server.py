@@ -27,11 +27,11 @@ class LineServer(object):
 
     USER_AGENT  = 'Line/8.3.2'
     APP_TYPE    = ApplicationType.DESKTOPWIN
-    APP_NAME    = "DESKTOPWIN\t5.5.1.1587\tWINDOWS_NT\t6.3"
+    APP_NAME    = "DESKTOPWIN\t8.3.2\tPhieCobain\t10.0.0"
     PHONE_TYPE  = ApplicationType.IOS
-    PHONE_NAME  = 'IOS\t7.14.0\tiPhone OS\t10.12.0'
+    PHONE_NAME  = 'DESKTOPWIN\t8.3.2\t"+nama+"\t10.0.0'
     CARRIER     = '51089, 1-0'
-    SYSTEM_NAME = 'PeKI-BOT'
+    SYSTEM_NAME = 'PhieCobain'
     IP_ADDR     = '8.8.8.8'
     EMAIL_REGEX = re.compile(r"[^@]+@[^@]+\.[^@]+")
 
