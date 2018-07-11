@@ -25,7 +25,7 @@ class LineServer(object):
         'LINE_MUSIC': '1381425814'
     }
 
-    USER_AGENT  = 'Line/5.5.1.1.587'
+    USER_AGENT  = 'Line/8.3.2'
     APP_TYPE    = ApplicationType.DESKTOPWIN
     APP_NAME    = "DESKTOPWIN\t5.5.1.1587\tWINDOWS_NT\t6.3"
     PHONE_TYPE  = ApplicationType.IOS
