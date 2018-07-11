@@ -1,5 +1,3 @@
-LINEPY/api.py
-
 # -*- coding: utf-8 -*-
 from akad.ttypes import IdentityProvider, LoginResultType
 from .server import LineServer
