@@ -10,37 +10,37 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 import youtube_dl
 
-cl = LineClient(authToken='EpsvNIiVpkL8l6SShov9.Z5FOM+X3LdX9eCuSNeAYUq.xlYQFovZSUWaKWfmuPG30+10zqg9T0l98u/63m4eKI4=')
+cl = LineClient(authToken='token kamu disini')
 cl.log("Auth Token : " + str(cl.authToken))
 channel = LineChannel(cl)
 cl.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-ki = LineClient(authToken='EpY36EVngNMHhGCWKn35.nN/W1hRS2jCwfMU0jz3HXq.fElnGOUdlq83eF69m9wdnigevldEfoaKE6gjDpz5hcE=')
+ki = LineClient(authToken='token bot kamu')
 ki.log("Auth Token : " + str(ki.authToken))
 channel1 = LineChannel(ki)
 ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
 
-kk = LineClient(authToken='EpycHUakrUL4qTSr8x45.f75HxSbI5XvSqKmefjKFPq.YJ+GVul8yopkPhjODYGk6vDXrwLtMShCm73mWjcnv1c=')
+kk = LineClient(authToken='token bot kamu')
 kk.log("Auth Token : " + str(kk.authToken))
 channel2 = LineChannel(kk)
 kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
 
-kc = LineClient(authToken='Epd7XIvzoSKa2BtleP4a.J6oGrwF6AjGK7WYald7J/G.D1vM8+PAIND1JI1p9klI6g+d+jcOdUvg546Ahz3RTUM=')
+kc = LineClient(authToken='token bot kamu')
 kc.log("Auth Token : " + str(kc.authToken))
 channel3 = LineChannel(kc)
 kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
 
-sw = LineClient(authToken='Epbbbm43qm4lq6iizgoa.fdZ3mfXjEHiMPpSnvvUW/G.HxMlJyeqNfK8h1YN1mHedM7HkbkTTEIgkhNscB41bsU=')
+sw = LineClient(authToken='token bot kamu')
 sw.log("Auth Token : " + str(sw.authToken))
 channel11 = LineChannel(sw)
 sw.log("Channel Access Token : " + str(channel11.channelAccessToken))
 
 poll = LinePoll(cl)
 call = LineCall(cl)
-creator = ["u02aea92a3d7e44f587e7a91141e78b59"]
-owner = ["u02aea92a3d7e44f587e7a91141e78b59"]
-admin = ["ucf97e89bfc77943c7d11c52c9c46b2b9"]
-staff = ["ucf97e89bfc77943c7d11c52c9c46b2b9"]
+creator = ["u9f478c580a9c4e1de5e407e9b10c2da1"]
+owner = ["u9f478c580a9c4e1de5e407e9b10c2da1"]
+admin = ["u9f478c580a9c4e1de5e407e9b10c2da1"]
+staff = ["u9f478c580a9c4e1de5e407e9b10c2da1"]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
@@ -121,11 +121,11 @@ wait = {
     "welcomeOn":False,
     "sticker":False,
     "selfbot":True,
-    "mention":"Tuh maling sempak ngintip -_-",
-    "Respontag":"Pekookk... tag mulu -_-",
-    "welcome":"Selamat datang & semoga croott",
-    "comment":"Like like & like by SAINTS BOT",
-    "message":"Terimakasih sudah add saya 😃\n☆| SAINTS BOT |☆\n\nOpen Order:\n🔰 1 Sb + 3 assist\n🔰 1 Sb + 5 assist\n\nMinat?\nChat aja...",
+    "mention":"sesungguhnya mengintip adalah perbuatan yg tercela ,apalagi ngintip orang sedang mandi.",
+    "Respontag":"aih knpa kamu yg ngetag,aku maunya ditag dia ,kamu jangan tag aku lagi ya.",
+    "welcome":"Selamat datang & semoga betah di",
+    "comment":"AutoLike & Comment by ᴄᴀʟᴏɴ ᴀʟᴍᴀʀʜᴜᴍ™",
+    "message":"Yess aku diadd 😃\n☆ᴄᴀʟᴏɴ ᴀʟᴍᴀʀʜᴜᴍ™☆\n\nOpen Jasa:\n🔰 Bahagiain Pacar\n🔰 Jadi Pacar idaman\n\nMinat?\nLangsung Call aja...",
     }
 
 read = {
@@ -177,7 +177,7 @@ def runtime(secs):
 def mentionMembers(to, mid):
     try:
         arrData = ""
-        textx = "Total Mention User「{}」\n\n  [ Mention ]\n1. ".format(str(len(mid)))
+        textx = "Mention User「{}」\n\n  [ Mention ]\n1. ".format(str(len(mid)))
         arr = []
         no = 1
         num = 2
@@ -204,7 +204,7 @@ def mentionMembers(to, mid):
 def siderMembers(to, mid):
     try:
         arrData = ""
-        textx = "Total Sider User「{}」\nHaii ".format(str(len(mid)))
+        textx = "Sider User「{}」\nHai ".format(str(len(mid)))
         arr = []
         no = 1
         num = 2
@@ -231,7 +231,7 @@ def siderMembers(to, mid):
 def welcomeMembers(to, mid):
     try:
         arrData = ""
-        textx = "Total Member Masuk「{}」\nHaii  ".format(str(len(mid)))
+        textx = "Nah Ketemu Kamu「{}」\nHai  ".format(str(len(mid)))
         arr = []
         no = 1
         num = 2
@@ -277,7 +277,7 @@ def sendMention(to, mid, firstmessage):
         timeNow = datetime.now(tz=tz)
         eltime = time.time() - mulai
         bot = runtime(eltime)
-        text += mention+"🔰 Jam : "+datetime.strftime(timeNow,'%H:%M:%S')+" Wib\n🔰 Group : "+str(len(gid))+"\n🔰 Teman : "+str(len(teman))+"\n🔰 Expired : In "+hari+"\n🔰 Version : Saints Bot\n🔰 Tanggal : "+datetime.strftime(timeNow,'%Y-%m-%d')+"\n🔰 Runtime : \n • "+bot
+        text += mention+"🔰 Jam : "+datetime.strftime(timeNow,'%H:%M:%S')+" Wib\n🔰 Group : "+str(len(gid))+"\n🔰 Teman : "+str(len(teman))+"\n🔰 Expired : In "+hari+"\n🔰 Version : ᴄᴀʟᴏɴ ᴀʟᴍᴀʀʜᴜᴍ™\n🔰 Tanggal : "+datetime.strftime(timeNow,'%Y-%m-%d')+"\n🔰 Runtime : \n • "+bot
         cl.sendMessage(to, text, {'MENTION': str('{"MENTIONEES":' + json.dumps(arr) + '}')}, 0)
     except Exception as error:
         cl.sendMessage(to, "[ INFO ] Error :\n" + str(error))
@@ -293,7 +293,7 @@ def command(text):
 def help():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage = "🔰 |SB| Family Menu\n   Gunakan「 " + key + " 」di depannya\n\n" + \
+    helpMessage = "🔰 ᴄᴀʟᴏɴ ᴀʟᴍᴀʀʜᴜᴍ™ Menu\n   Gunakan「 " + key + " 」di depannya\n\n" + \
                   "🔰 " + key + "Me\n" + \
                   "🔰 " + key + "Mid「@」\n" + \
                   "🔰 " + key + "Info「@」\n" + \
@@ -330,7 +330,7 @@ def help():
                   "🔰 " + key + "Setkey「New Key」\n" + \
                   "🔰 " + key + "Mykey\n" + \
                   "🔰 " + key + "Resetkey\n" + \
-                  "\n🔰 |SB| Family Hiburan\n   Gunakan「 " + key + " 」di depannya\n\n" + \
+                  "\n🔰 ᴄᴀʟᴏɴ ᴀʟᴍᴀʀʜᴜᴍ™ Media\n   Gunakan「 " + key + " 」di depannya\n\n" + \
                   "🔰 " + key + "ID line:「Id Line nya」\n" + \
                   "🔰 " + key + "Sholat:「Nama Kota」\n" + \
                   "🔰 " + key + "Cuaca:「Nama Kota」\n" + \
@@ -345,14 +345,14 @@ def help():
                   "🔰 " + key + "Spamtag「@」\n" + \
                   "🔰 " + key + "Spamcall:「jumlahnya」\n" + \
                   "🔰 " + key + "Spamcall\n" + \
-                  "\n🔰 |SB| Family Protection\n   Jangan gunakan「 " + key + " 」di depannya\n\n" + \
+                  "\n🔰 ᴄᴀʟᴏɴ ᴀʟᴍᴀʀʜᴜᴍ™ Protection\n   Jangan gunakan「 " + key + " 」di depannya\n\n" + \
                   "🔰 " + key + "Notag「on/off」\n" + \
                   "🔰 " + key + "Semuapro「on/off」\n" + \
                   "🔰 " + key + "Protecturl「on/off」\n" + \
                   "🔰 " + key + "Protectjoin「on/off」\n" + \
                   "🔰 " + key + "Protectkick「on/off」\n" + \
                   "🔰 " + key + "Protectcancel「on/off」\n" + \
-                  "\n🔰 |SB| Family Setting\n   Jangan gunakan「 " + key + " 」di depannya\n\n" + \
+                  "\n🔰 ᴄᴀʟᴏɴ ᴀʟᴍᴀʀʜᴜᴍ™ Setting\n   Jangan gunakan「 " + key + " 」di depannya\n\n" + \
                   "🔰 " + key + "Sticker「on/off」\n" + \
                   "🔰 " + key + "Respon「on/off」\n" + \
                   "🔰 " + key + "Contact「on/off」\n" + \
@@ -360,7 +360,7 @@ def help():
                   "🔰 " + key + "Autoadd「on/off」\n" + \
                   "🔰 " + key + "Welcome「on/off」\n" + \
                   "🔰 " + key + "Autoleave「on/off」\n" + \
-                  "\n🔰 |SB| Family Admin\n    Jangan gunakan「 " + key + " 」di depannya\n\n" + \
+                  "\n🔰 ᴄᴀʟᴏɴ ᴀʟᴍᴀʀʜᴜᴍ™ Admin\n    Jangan gunakan「 " + key + " 」di depannya\n\n" + \
                   "🔰 " + key + "Admin:on\n" + \
                   "🔰 " + key + "Admin:repeat\n" + \
                   "🔰 " + key + "Staff:on\n" + \
@@ -383,7 +383,7 @@ def help():
 def helpbot():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage1 = "🔰 |SB| Family Blacklist\n   Jangan gunakan「 " + key + " 」di depannya\n\n" + \
+    helpMessage1 = "🔰 ᴄᴀʟᴏɴ ᴀʟᴍᴀʀʜᴜᴍ™ Blacklist\n   Jangan gunakan「 " + key + " 」di depannya\n\n" + \
                   "🔰 " + key + "Blc\n" + \
                   "🔰 " + key + "Ban:on\n" + \
                   "🔰 " + key + "Unban:on\n" + \
@@ -397,7 +397,7 @@ def helpbot():
                   "🔰 " + key + "Talkbanlist\n" + \
                   "🔰 " + key + "Clearban\n" + \
                   "🔰 " + key + "Refresh\n" + \
-                  "\n🔰 |SB| Family Menu\n    Gunakan「 " + key + " 」di depannya\n\n" + \
+                  "\n🔰 ᴄᴀʟᴏɴ ᴀʟᴍᴀʀʜᴜᴍ™ Menu\n    Gunakan「 " + key + " 」di depannya\n\n" + \
                   "🔰 " + key + "Cek sider\n" + \
                   "🔰 " + key + "Cek spam\n" + \
                   "🔰 " + key + "Cek pesan \n" + \
@@ -491,12 +491,12 @@ def bot(op):
                     if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                         cl.acceptGroupInvitation(op.param1)
                         ginfo = cl.getGroup(op.param1)
-                        cl.sendMessage(op.param1,"Selamat Tinggal\n Group " +str(ginfo.name))
+                        cl.sendMessage(op.param1,"Selamat Tinggal semuanya yg ada di\n Group " +str(ginfo.name))
                         cl.leaveGroup(op.param1)
                     else:
                         cl.acceptGroupInvitation(op.param1)
                         ginfo = cl.getGroup(op.param1)
-                        cl.sendMessage(op.param1,"Hai " + str(ginfo.name))
+                        cl.sendMessage(op.param1,"Hai semuanya yg ada di " + str(ginfo.name))
 
         if op.type == 13:
             if mid in op.param3:
@@ -504,44 +504,44 @@ def bot(op):
                     if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                         cl.acceptGroupInvitation(op.param1)
                         ginfo = cl.getGroup(op.param1)
-                        cl.sendMessage(op.param1,"Haii " +str(ginfo.name))
+                        cl.sendMessage(op.param1,"Hai semuanya yg ada di " +str(ginfo.name))
                     else:
                         cl.acceptGroupInvitation(op.param1)
                         ginfo = cl.getGroup(op.param1)
-                        cl.sendMessage(op.param1,"Haii " + str(ginfo.name))
+                        cl.sendMessage(op.param1,"Hai semuanya yg ada di " + str(ginfo.name))
             if Amid in op.param3:
                 if wait["autoJoin"] == True:
                     if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                         ki.acceptGroupInvitation(op.param1)
                         ginfo = ki.getGroup(op.param1)
-                        ki.sendMessage(op.param1,"Selamat Tinggal\n Group " +str(ginfo.name))
+                        ki.sendMessage(op.param1,"Selamat Tinggal semuanya yg ada di\n Group " +str(ginfo.name))
                         ki.leaveGroup(op.param1)
                     else:
                         ki.acceptGroupInvitation(op.param1)
                         ginfo = ki.getGroup(op.param1)
-                        ki.sendMessage(op.param1,"Hai " + str(ginfo.name))
+                        ki.sendMessage(op.param1,"Hai semuanya yg ada di " + str(ginfo.name))
             if Bmid in op.param3:
                 if wait["autoJoin"] == True:
                     if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                         kk.acceptGroupInvitation(op.param1)
                         ginfo = kk.getGroup(op.param1)
-                        ki.sendMessage(op.param1,"Selamat Tinggal\n Group " +str(ginfo.name))
+                        ki.sendMessage(op.param1,"Selamat Tinggal semuanya yg ada di\n Group " +str(ginfo.name))
                         kk.leaveGroup(op.param1)
                     else:
                         kk.acceptGroupInvitation(op.param1)
                         ginfo = kk.getGroup(op.param1)
-                        kk.sendMessage(op.param1,"Hai " + str(ginfo.name))
+                        kk.sendMessage(op.param1,"Hai semuanya yg ada di " + str(ginfo.name))
             if Cmid in op.param3:
                 if wait["autoJoin"] == True:
                     if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                         kc.acceptGroupInvitation(op.param1)
                         ginfo = kc.getGroup(op.param1)
-                        kc.sendMessage(op.param1,"Selamat Tinggal\n Group " +str(ginfo.name))
+                        kc.sendMessage(op.param1,"Selamat Tinggal semuanya yg ada di\n Group " +str(ginfo.name))
                         kc.leaveGroup(op.param1)
                     else:
                         kc.acceptGroupInvitation(op.param1)
                         ginfo = kc.getGroup(op.param1)
-                        kc.sendMessage(op.param1,"Hai " + str(ginfo.name))
+                        kc.sendMessage(op.param1,"Hai semuanya yg ada di " + str(ginfo.name))
 
         if op.type == 13:
             if op.param1 in protectinvite:
@@ -1055,7 +1055,7 @@ def bot(op):
                         cl.sendMessage(msg.to,"Berhasil menghapus dari anggota bot")
                     else:
                         wait["dellbots"] = True
-                        cl.sendMessage(msg.to,"Contact itu bukan anggota bot saints")
+                        cl.sendMessage(msg.to,"Contact itu bukan anggota bot")
 #ADD STAFF
                  if msg._from in admin:
                   if wait["addstaff"] == True:
@@ -1228,38 +1228,38 @@ def bot(op):
                             if msg._from in admin:
                                 tz = pytz.timezone("Asia/Jakarta")
                                 timeNow = datetime.now(tz=tz)
-                                md = "🔰 |SB| Protection\n\n"
-                                if wait["sticker"] == True: md+="🔰 Sticker「ON」\n"
-                                else: md+="🔰 Sticker「OFF」\n"
-                                if wait["contact"] == True: md+="🔰 Contact「ON」\n"
-                                else: md+="🔰 Contact「OFF」\n"
-                                if wait["talkban"] == True: md+="🔰 Talkban「ON」\n"
-                                else: md+="🔰 Talkban「OFF」\n"
-                                if wait["Mentionkick"] == True: md+="🔰 Notag「ON」\n"
-                                else: md+="🔰 Notag「OFF」\n"
-                                if wait["detectMention"] == True: md+="🔰 Respon「ON」"
-                                else: md+="🔰 Respon「OFF」\n"
-                                if wait["autoJoin"] == True: md+="🔰 Autojoin「ON」\n"
-                                else: md+="🔰 Autojoin「OFF」\n"
-                                if wait["autoAdd"] == True: md+="🔰 Autoadd「ON」\n"
-                                else: md+="🔰 Autoadd「OFF」\n"
-                                if msg.to in welcome: md+="🔰 Welcome「ON」\n"
-                                else: md+="🔰 Welcome「OFF」\n"
-                                if wait["autoLeave"] == True: md+="🔰 Autoleave「ON」\n"
-                                else: md+="🔰 Autoleave「OFF」\n"
-                                if msg.to in protectqr: md+="🔰 Protecturl「ON」\n"
-                                else: md+="🔰 Protecturl「OFF」\n"
-                                if msg.to in protectjoin: md+="🔰 Protectjoin「ON」\n"
-                                else: md+="🔰 Protectjoin「OFF」\n"
-                                if msg.to in protectkick: md+="🔰 Protectkick「ON」\n"
-                                else: md+="🔰 Protectkick「OFF」\n"
-                                if msg.to in protectcancel: md+="🔰 Protectcancel「ON」\n"
-                                else: md+="🔰 Protectcancel「OFF」\n"
+                                md = "🔰 ᴄᴀʟᴏɴ ᴀʟᴍᴀʀʜᴜᴍ™ Protect\n\n"
+                                if wait["sticker"] == True: md+="🔰 Sticker「ᴏɴ」\n"
+                                else: md+="🔰 Sticker「ᴏꜰꜰ」\n"
+                                if wait["contact"] == True: md+="🔰 Contact「ᴏɴ」\n"
+                                else: md+="🔰 Contact「ᴏꜰꜰ」\n"
+                                if wait["talkban"] == True: md+="🔰 Talkban「ᴏɴ」\n"
+                                else: md+="🔰 Talkban「ᴏꜰꜰ」\n"
+                                if wait["Mentionkick"] == True: md+="🔰 Notag「ᴏɴ」\n"
+                                else: md+="🔰 Notag「ᴏꜰꜰ」\n"
+                                if wait["detectMention"] == True: md+="🔰 Respon「ᴏɴ」\n"
+                                else: md+="🔰 Respon「ᴏꜰꜰ」\n"
+                                if wait["autoJoin"] == True: md+="🔰 Autojoin「ᴏɴ」\n"
+                                else: md+="🔰 Autojoin「ᴏꜰꜰ」\n"
+                                if wait["autoAdd"] == True: md+="🔰 Autoadd「ᴏɴ」\n"
+                                else: md+="🔰 Autoadd「ᴏꜰꜰ」\n"
+                                if msg.to in welcome: md+="🔰 Welcome「ᴏɴ」\n"
+                                else: md+="🔰 Welcome「ᴏꜰꜰ」\n"
+                                if wait["autoLeave"] == True: md+="🔰 Autoleave「ᴏɴ」\n"
+                                else: md+="🔰 Autoleave「ᴏꜰꜰ」\n"
+                                if msg.to in protectqr: md+="🔰 Protecturl「ᴏɴ」\n"
+                                else: md+="🔰 Protecturl「ᴏꜰꜰ」\n"
+                                if msg.to in protectjoin: md+="🔰 Protectjoin「ᴏɴ」\n"
+                                else: md+="🔰 Protectjoin「ᴏꜰꜰ」\n"
+                                if msg.to in protectkick: md+="🔰 Protectkick「ᴏɴ」\n"
+                                else: md+="🔰 Protectkick「ᴏꜰꜰ」\n"
+                                if msg.to in protectcancel: md+="🔰 Protectcancel「ᴏɴ」\n"
+                                else: md+="🔰 Protectcancel「ᴏꜰꜰ」\n"
                                 cl.sendMessage(msg.to, md+"\nTanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\nJam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]")
 
                         elif cmd == "creator" or text.lower() == 'creator':
                             if msg._from in admin:
-                                cl.sendText(msg.to,"Creator Saints Bot") 
+                                cl.sendText(msg.to,"Creator ᴄᴀʟᴏɴ ᴀʟᴍᴀʀʜᴜᴍ™") 
                                 ma = ""
                                 for i in creator:
                                     ma = cl.getContact(i)
@@ -1375,7 +1375,7 @@ def bot(op):
                         elif cmd == "restart":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
-                               cl.sendMessage(msg.to, "Tunggu sebentar...")
+                               cl.sendMessage(msg.to, "please waiting...")
                                Setmain["restartPoint"] = msg.to
                                restartBot()
                                cl.sendMessage(msg.to, "Silahkan gunakan seperti semula...")
@@ -1403,7 +1403,7 @@ def bot(op):
                                     gTicket = "https://line.me/R/ti/g/{}".format(str(cl.reissueGroupTicket(G.id)))
                                 timeCreated = []
                                 timeCreated.append(time.strftime("%d-%m-%Y [ %H:%M:%S ]", time.localtime(int(G.createdTime) / 1000)))
-                                cl.sendMessage(msg.to, "🔰 |SB| Family Grup Info\n\n🔰 Nama Group : {}".format(G.name)+ "\n🔰 ID Group : {}".format(G.id)+ "\n🔰 Pembuat : {}".format(G.creator.displayName)+ "\n🔰 Waktu Dibuat : {}".format(str(timeCreated))+ "\n🔰 Jumlah Member : {}".format(str(len(G.members)))+ "\n🔰 Jumlah Pending : {}".format(gPending)+ "\n🔰 Group Qr : {}".format(gQr)+ "\n🔰 Group Ticket : {}".format(gTicket))
+                                cl.sendMessage(msg.to, "🔰 ᴄᴀʟᴏɴ ᴀʟᴍᴀʀʜᴜᴍ™detect Grup Info\n\n🔰 Nama Group : {}".format(G.name)+ "\n🔰 ID Group : {}".format(G.id)+ "\n🔰 Pembuat : {}".format(G.creator.displayName)+ "\n🔰 Waktu Dibuat : {}".format(str(timeCreated))+ "\n🔰 Jumlah Member : {}".format(str(len(G.members)))+ "\n🔰 Jumlah Pending : {}".format(gPending)+ "\n🔰 Group Qr : {}".format(gQr)+ "\n🔰 Group Ticket : {}".format(gTicket))
                                 cl.sendMessage(msg.to, None, contentMetadata={'mid': G.creator.mid}, contentType=13)
                                 cl.sendImageWithURL(msg.to, 'http://dl.profile.line-cdn.net/'+G.pictureStatus)
                             except Exception as e:
@@ -1434,7 +1434,7 @@ def bot(op):
                                     gTicket = "https://line.me/R/ti/g/{}".format(str(cl.reissueGroupTicket(G.id)))
                                 timeCreated = []
                                 timeCreated.append(time.strftime("%d-%m-%Y [ %H:%M:%S ]", time.localtime(int(G.createdTime) / 1000)))
-                                ret_ += "🔰 |SB| Family Grup Info\n"
+                                ret_ += "🔰 ᴄᴀʟᴏɴ ᴀʟᴍᴀʀʜᴜᴍ™detect Grup Info\n"
                                 ret_ += "\n🔰 Nama Group : {}".format(G.name)
                                 ret_ += "\n🔰 ID Group : {}".format(G.id)
                                 ret_ += "\n🔰 Pembuat : {}".format(gCreator)
@@ -1498,7 +1498,7 @@ def bot(op):
                                    a = a + 1
                                    end = "\n"
                                    ma += "╠ " + str(a) + ". " +G.displayName+ "\n"
-                               cl.sendMessage(msg.to,"╔══[ FRIEND LIST ]\n║\n"+ma+"║\n╚══[ Total「"+str(len(gid))+"」Friends ]")
+                               cl.sendMessage(msg.to,"╔══➢ FRIEND LIST\n║\n"+ma+"║\n╚══➢ Total「"+str(len(gid))+"」Friends")
 
                         elif cmd == "gruplist":
                           if wait["selfbot"] == True:
@@ -1511,7 +1511,7 @@ def bot(op):
                                    a = a + 1
                                    end = "\n"
                                    ma += "╠ " + str(a) + ". " +G.name+ "\n"
-                               cl.sendMessage(msg.to,"╔══[ GROUP LIST ]\n║\n"+ma+"║\n╚══[ Total「"+str(len(gid))+"」Groups ]")
+                               cl.sendMessage(msg.to,"╔══➢ GROUP LIST\n║\n"+ma+"║\n╚══➢ Total「"+str(len(gid))+"」Groups")
 
                         elif cmd == "gruplist1":
                             if msg._from in admin:
@@ -1523,7 +1523,7 @@ def bot(op):
                                    a = a + 1
                                    end = "\n"
                                    ma += "╠ " + str(a) + ". " +G.name+ "\n"
-                               ki.sendMessage(msg.to,"╔══[ GROUP LIST ]\n║\n"+ma+"║\n╚══[ Total「"+str(len(gid))+"」Groups ]")
+                               ki.sendMessage(msg.to,"╔══➢ GROUP LIST\n║\n"+ma+"║\n╚══➢ Total「"+str(len(gid))+"」Groups")
 
                         elif cmd == "gruplist2":
                             if msg._from in admin:
@@ -1535,7 +1535,7 @@ def bot(op):
                                    a = a + 1
                                    end = "\n"
                                    ma += "╠ " + str(a) + ". " +G.name+ "\n"
-                               kk.sendMessage(msg.to,"╔══[ GROUP LIST ]\n║\n"+ma+"║\n╚══[ Total「"+str(len(gid))+"」Groups ]")
+                               kk.sendMessage(msg.to,"╔══➢ GROUP LIST\n║\n"+ma+"║\n╚══➢ Total「"+str(len(gid))+"」Groups")
 
                         elif cmd == "gruplist3":
                             if msg._from in admin:
@@ -1547,7 +1547,7 @@ def bot(op):
                                    a = a + 1
                                    end = "\n"
                                    ma += "╠ " + str(a) + ". " +G.name+ "\n"
-                               kc.sendMessage(msg.to,"╔══[ GROUP LIST ]\n║\n"+ma+"║\n╚══[ Total「"+str(len(gid))+"」Groups ]")
+                               kc.sendMessage(msg.to,"╔══➢ GROUP LIST\n║\n"+ma+"║\n╚══➢ Total「"+str(len(gid))+"」Groups")
 
                         elif cmd == "open":
                           if wait["selfbot"] == True:
@@ -1669,7 +1669,7 @@ def bot(op):
                                 sw.sendMessage(msg.to,"Nama diganti jadi " + string + "")
 
 #===========BOT UPDATE============#
-                        elif cmd == "tagall" or text.lower() == '😆':
+                        elif cmd == "tagall" or text.lower() == 'tag':
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                group = cl.getGroup(msg.to)
@@ -1733,7 +1733,7 @@ def bot(op):
                                     a = a + 1
                                     end = '\n'
                                     ma += str(a) + ". " +cl.getContact(m_id).displayName + "\n"
-                                cl.sendMessage(msg.to,"🔰 |SB| Family bot\n\n"+ma+"\nTotal「%s」Family Bots" %(str(len(Bots))))
+                                cl.sendMessage(msg.to,"🔰 ᴄᴀʟᴏɴ ᴀʟᴍᴀʀʜᴜᴍ™ bot\n\n"+ma+"\nTotal「%s」ᴄᴀʟᴏɴ ᴀʟᴍᴀʀʜᴜᴍ™" %(str(len(Bots))))
 
                         elif cmd == "listadmin":
                           if wait["selfbot"] == True:
@@ -1756,7 +1756,7 @@ def bot(op):
                                     c = c + 1
                                     end = '\n'
                                     mc += str(c) + ". " +cl.getContact(m_id).displayName + "\n"
-                                cl.sendMessage(msg.to,"🔰 |SB| Family admin\n\nSuper admin:\n"+ma+"\nAdmin:\n"+mb+"\nStaff:\n"+mc+"\nTotal「%s」Family Saints" %(str(len(owner)+len(admin)+len(staff))))
+                                cl.sendMessage(msg.to,"🔰 ᴄᴀʟᴏɴ ᴀʟᴍᴀʀʜᴜᴍ™ admin\n\nSuper admin:\n"+ma+"\nAdmin:\n"+mb+"\nStaff:\n"+mc+"\nTotal「%s」ᴄᴀʟᴏɴ ᴀʟᴍᴀʀʜᴜᴍ™" %(str(len(owner)+len(admin)+len(staff))))
 
                         elif cmd == "listprotect":
                           if wait["selfbot"] == True:
@@ -1789,7 +1789,7 @@ def bot(op):
                                     c = c + 1
                                     end = '\n'
                                     mc += str(c) + ". " +cl.getGroup(group).name + "\n"
-                                cl.sendMessage(msg.to,"🔰 |SB| Family Protection\n\n🔰 PROTECT URL :\n"+ma+"\n🔰 PROTECT KICK :\n"+mb+"\n🔰 PROTECT JOIN :\n"+md+"\n🔰 PROTECT CANCEL:\n"+mc+"\nTotal「%s」Grup yg dijaga" %(str(len(protectqr)+len(protectkick)+len(protectjoin)+len(protectcancel))))
+                                cl.sendMessage(msg.to,"🔰 ᴄᴀʟᴏɴ ᴀʟᴍᴀʀʜᴜᴍ™ Protection\n\n🔰 PROTECT URL :\n"+ma+"\n🔰 PROTECT KICK :\n"+mb+"\n🔰 PROTECT JOIN :\n"+md+"\n🔰 PROTECT CANCEL:\n"+mc+"\nTotal「%s」Grup yg dijaga" %(str(len(protectqr)+len(protectkick)+len(protectjoin)+len(protectcancel))))
 
                         elif cmd == "respon":
                           if wait["selfbot"] == True:
@@ -1830,7 +1830,7 @@ def bot(op):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 G = cl.getGroup(msg.to)
-                                ki.sendText(msg.to, "Bye bye fams "+str(G.name))
+                                ki.sendText(msg.to, "Bye-bye semuanya yg ada di "+str(G.name))
                                 ki.leaveGroup(msg.to)
                                 kk.leaveGroup(msg.to)
                                 kc.leaveGroup(msg.to)
@@ -1839,7 +1839,7 @@ def bot(op):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 G = cl.getGroup(msg.to)
-                                cl.sendText(msg.to, "Bye bye fams "+str(G.name))
+                                cl.sendText(msg.to, "Bye-bye "+str(G.name))
                                 cl.leaveGroup(msg.to)
 
                         elif cmd.startswith("leave "):
@@ -1925,7 +1925,7 @@ def bot(op):
                                 get_contact_time_start = time.time()
                                 get_contact = cl.getContact(mid)
                                 get_contact_time = time.time() - get_contact_time_start
-                                cl.sendMessage(msg.to, "🔰 |SB| Speed respon\n\n - Get Profile\n   %.10f\n - Get Contact\n   %.10f\n - Get Group\n   %.10f" % (get_profile_time/3,get_contact_time/3,get_group_time/3))
+                                cl.sendMessage(msg.to, "🔰 ᴄᴀʟᴏɴ ᴀʟᴍᴀʀʜᴜᴍ™ Speed respon\n\n - Get Profile\n   %.10f\n - Get Contact\n   %.10f\n - Get Group\n   %.10f" % (get_profile_time/3,get_contact_time/3,get_group_time/3))
 
                         elif cmd == "speed" or cmd == "sp":
                           if wait["selfbot"] == True:
@@ -2475,9 +2475,9 @@ def bot(op):
                                          msgs = "Protect cancel sudah tidak aktif"
                                     cl.sendMessage(msg.to, "「Dinonaktifkan」\n" + msgs)
 
-                        elif 'Semua pro ' in msg.text:
+                        elif 'Semuapro ' in msg.text:
                            if msg._from in admin:
-                              spl = msg.text.replace('Semua pro ','')
+                              spl = msg.text.replace('Semuapro ','')
                               if spl == 'on':
                                   if msg.to in protectqr:
                                        msgs = ""
@@ -2912,7 +2912,7 @@ def bot(op):
                                     a = a + 1
                                     end = '\n'
                                     ma += str(a) + ". " +cl.getContact(m_id).displayName + "\n"
-                                cl.sendMessage(msg.to,"🔰 |SB| Blacklist User\n\n"+ma+"\nTotal「%s」Blacklist User" %(str(len(wait["blacklist"]))))
+                                cl.sendMessage(msg.to,"🔰 ᴄᴀʟᴏɴ ᴀʟᴍᴀʀʜᴜᴍ™ Blacklist User\n\n"+ma+"\nTotal「%s」Blacklist User" %(str(len(wait["blacklist"]))))
 
                         elif cmd == "talkbanlist" or text.lower() == 'talkbanlist':
                           if wait["selfbot"] == True:
@@ -2926,7 +2926,7 @@ def bot(op):
                                     a = a + 1
                                     end = '\n'
                                     ma += str(a) + ". " +cl.getContact(m_id).displayName + "\n"
-                                cl.sendMessage(msg.to,"🔰 |SB| Talkban User\n\n"+ma+"\nTotal「%s」Talkban User" %(str(len(wait["Talkblacklist"]))))
+                                cl.sendMessage(msg.to,"🔰 ᴄᴀʟᴏɴ ᴀʟᴍᴀʀʜᴜᴍ™ Talkban User\n\n"+ma+"\nTotal「%s」Talkban User" %(str(len(wait["Talkblacklist"]))))
 
                         elif cmd == "blc" or text.lower() == 'blc':
                           if wait["selfbot"] == True:
