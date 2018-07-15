@@ -25,13 +25,13 @@ class LineServer(object):
         'LINE_MUSIC': '1381425814'
     }
 
-    USER_AGENT  = 'Line/8.3.2'
-    APP_TYPE    = ApplicationType.DESKTOPWIN
-    APP_NAME    = "DESKTOPWIN\t8.3.2\tPhieCobain\t10.0.0"
+    USER_AGENT  = 'Line/2.1.5'
+    APP_TYPE    = ApplicationType.CHROMEOS
+    APP_NAME    = "CHROMEOS\t2.1.5\tCHROME_OS\t1"
     PHONE_TYPE  = ApplicationType.IOS
-    PHONE_NAME  = 'DESKTOPWIN\t8.3.2\t"+nama+"\t10.0.0'
+    PHONE_NAME  = 'CHROMEOS\t2.1.5\t"+nama+"\t1'
     CARRIER     = '51089, 1-0'
-    SYSTEM_NAME = 'PhieCobain'
+    SYSTEM_NAME = 'CHROME_OS'
     IP_ADDR     = '8.8.8.8'
     EMAIL_REGEX = re.compile(r"[^@]+@[^@]+\.[^@]+")
 
