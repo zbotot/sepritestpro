@@ -1,11 +1,8 @@
 # SBpro
 BOT SELF + ASSIST BOT
 
-
-
-untuk ambil token https://github.com/PHIEZUKE/QR-token
-
-
+untuk ambil token ลิ้งโทเค่น
+git clone https://github.com/PHIEZUKE/QR-token
 
 apt update
 
@@ -45,3 +42,5 @@ git clone https://github.com/0954517662/SBpro
 
 cd SBpro
 python3 SB.py
+
+LINE ID: self_js
