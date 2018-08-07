@@ -37,10 +37,10 @@ sw.log("Channel Access Token : " + str(channel11.channelAccessToken))
 
 poll = LinePoll(cl)
 call = LineCall(cl)
-creator = ["u9f478c580a9c4e1de5e407e9b10c2da1","u31d8aba9dff04c75242f2a2097b8adae"]
-owner = ["u9f478c580a9c4e1de5e407e9b10c2da1","u31d8aba9dff04c75242f2a2097b8adae"]
-admin = ["u9f478c580a9c4e1de5e407e9b10c2da1","u31d8aba9dff04c75242f2a2097b8adae"]
-staff = ["u9f478c580a9c4e1de5e407e9b10c2da1","u31d8aba9dff04c75242f2a2097b8adae"]
+creator = ["u4862fe4b182b2fd194a3108e2f3662e8","ue1d6a794435130d139f9c5dde19aa9e5"]
+owner = ["u4862fe4b182b2fd194a3108e2f3662e8","ue1d6a794435130d139f9c5dde19aa9e5"]
+admin = ["u4862fe4b182b2fd194a3108e2f3662e8","ue1d6a794435130d139f9c5dde19aa9e5"]
+staff = ["u4862fe4b182b2fd194a3108e2f3662e8","ue1d6a794435130d139f9c5dde19aa9e5"]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
@@ -116,7 +116,7 @@ wait = {
     'autoAdd':True,
     'autoLeave':False,
     'autoLeave1':False,
-    "detectMention":False,
+    "detectMention":True,
     "Mentionkick":False,
     "welcomeOn":False,
     "sticker":False,
@@ -620,6 +620,7 @@ def bot(op):
                         pass
                     else:
                         cl.sendText(op.param1, wait["message"])
+                        cl.blockContact(op.param1)
 
         if op.type == 19:
             if op.param1 in protectkick:
