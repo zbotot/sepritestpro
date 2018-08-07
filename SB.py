@@ -122,7 +122,7 @@ wait = {
     "sticker":False,
     "selfbot":True,
     "mention":"sesungguhnya mengintip adalah perbuatan yg tercela ,apalagi ngintip orang sedang mandi.",
-    "Respontag":"aih knpa kamu yg ngetag,aku maunya ditag dia ,kamu jangan tag aku lagi ya.",
+    "Respontag":"เหงาหรอ แทคอยู่ได้ 😕",
     "welcome":"Selamat datang & semoga betah di",
     "comment":"AutoLike & Comment by ᴄᴀʟᴏɴ ᴀʟᴍᴀʀʜᴜᴍ™",
     "message":"Yess aku diadd 😃\n☆ᴄᴀʟᴏɴ ᴀʟᴍᴀʀʜᴜᴍ™☆\n\nOpen Jasa:\n🔰 Bahagiain Pacar\n🔰 Jadi Pacar idaman\n\nMinat?\nLangsung Call aja...",
