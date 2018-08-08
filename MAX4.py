@@ -1672,7 +1672,7 @@ def bot(op):
 #===========BOT UPDATE============#
                         elif cmd == "tagall":
                           if wait["selfbot"] == True:
-                            group = nadya.getGroup(msg.to)
+                            group = cl.getGroup(msg.to)
                             nama = [contact.mid for contact in group.members]
                             k = len(nama)//20
                             for a in range(k+1):
