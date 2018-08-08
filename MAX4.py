@@ -1673,7 +1673,6 @@ def bot(op):
                         elif cmd == "tagall" or text.lower() == 'tag':
                           if wait["selfbot"] == True:
                             if msg._from in admin:
-                                group = cl.getGroup(msg.to)
                                 gname = cl.getGroup(kirim)
                                 local = [contact.mid for contact in gname.members]
                                 try:
