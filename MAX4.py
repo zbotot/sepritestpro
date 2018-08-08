@@ -1673,23 +1673,19 @@ def bot(op):
                         elif cmd == "tagall" or text.lower() == 'tag':
                           if wait["selfbot"] == True:
                             if msg._from in admin:
-                                gname = cl.getGroup(kirim)
-                                local = [contact.mid for contact in gname.members]
-                                try:
-                                    lur = len(local)//20
-                                    for fu in range(lur+1):
-                                        hdc = u''
-                                        sell=0
-                                        com=[]
-                                        for rid in gname.members[fu*20 : (fu+1)*20]:
-                                            com.append({"S":str(sell), "E" :str(sell+6), "M":rid.mid})
-                                            sell += 7
-                                            hdc += u'@A_DPK\n'
-                                            atas = '\n Halo {} '.format(str(gname.name))
-                                            atas += '\n Halo {} Family'.format(str(len(local)))
-                                        cl.sendMessage(kirim, text=hdc + str(atas), contentMetadata={u'MENTION': json.dumps({'MENTIONEES':com})}, contentType=0)
-                                except Exception as error:
-                                    cl.sendMessage(kirim, str(error))
+                            group = cl.getGroup(to)
+                            midMembers = [contact.mid for contact in group.members]
+                            midSelect = len(midMembers)//20
+                            for mentionMembers in range(midSelect+1):
+                                    no = 0
+                                    ret_ = "╔════➢ Mention Members "
+                                    dataMid = []
+                                    for dataMention in group.members[mentionMembers*20 : (mentionMembers+1)*20]:
+                                            dataMid.append(dataMention.mid)
+                                            no += 1
+                                            ret_ += "\n╠ {}. @!".format(str(no))
+                                    ret_ += "\n╚════➢ Total {} Members".format(str(len(dataMid)))
+                                    cl.sendMention(to, ret_, dataMid)
 
                         elif cmd == "listbot":
                           if wait["selfbot"] == True:
