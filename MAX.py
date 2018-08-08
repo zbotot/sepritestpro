@@ -10,7 +10,7 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 import youtube_dl
 
-cl = LineClient(authToken='EupMrXWRpSNOiVdwFYQ9.5AVps4LgVf5meZavAc5SEq.K/Qs3oAFtWM0ECld/7olml5QwhCvtVXU3WPZpwxnc9Y=')
+cl = LineClient(authToken='Evj3hTMjFWiUIrrY9VY5.4DANLenrmne5/CxD4zQP5q.Rff91BIOb2Avk9v7GfzAcybVeUFnvNDxd2mJXdRFMg0=')
 cl.log("Auth Token : " + str(cl.authToken))
 channel = LineChannel(cl)
 cl.log("Channel Access Token : " + str(channel.channelAccessToken))
