@@ -10,7 +10,7 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 import youtube_dl
 
-cl = LineClient(authToken='EupMrXWRpSNOiVdwFYQ9.5AVps4LgVf5meZavAc5SEq.K/Qs3oAFtWM0ECld/7olml5QwhCvtVXU3WPZpwxnc9Y=')
+cl = LineClient(authToken='Evj3hTMjFWiUIrrY9VY5.4DANLenrmne5/CxD4zQP5q.Rff91BIOb2Avk9v7GfzAcybVeUFnvNDxd2mJXdRFMg0=')
 cl.log("Auth Token : " + str(cl.authToken))
 channel = LineChannel(cl)
 cl.log("Channel Access Token : " + str(channel.channelAccessToken))
@@ -122,10 +122,10 @@ wait = {
     "sticker":False,
     "selfbot":True,
     "mention":"sesungguhnya mengintip adalah perbuatan yg tercela ,apalagi ngintip orang sedang mandi.",
-    "Respontag":"เหงาหรอ แทคอยู่ได้ 😕",
+    "Respontag":"THANK FOR TAG ME 😃",
     "welcome":"Selamat datang & semoga betah di",
-    "comment":"AutoLike & Comment by ᴄᴀʟᴏɴ ᴀʟᴍᴀʀʜᴜᴍ™",
-    "message":"Yess aku diadd 😃\n☆ᴄᴀʟᴏɴ ᴀʟᴍᴀʀʜᴜᴍ™☆\n\nOpen Jasa:\n🔰 Bahagiain Pacar\n🔰 Jadi Pacar idaman\n\nMinat?\nLangsung Call aja...",
+    "comment":"AutoLike & Comment by MAX",
+    "message":"THANKS FOR ADD ME 😃",
     }
 
 read = {
