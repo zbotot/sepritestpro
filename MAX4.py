@@ -1670,22 +1670,21 @@ def bot(op):
                                 sw.sendMessage(msg.to,"Nama diganti jadi " + string + "")
 
 #===========BOT UPDATE============#
-                        elif cmd == "tagall" or text.lower() == 'tag':
+                        elif cmd == "tagall":
                           if wait["selfbot"] == True:
-                            if msg._from in admin:
-                            group = cl.getGroup(to)
-                            midMembers = [contact.mid for contact in group.members]
-                            midSelect = len(midMembers)//20
-                            for mentionMembers in range(midSelect+1):
-                                    no = 0
-                                    ret_ = "╔════➢ Mention Members "
-                                    dataMid = []
-                                    for dataMention in group.members[mentionMembers*20 : (mentionMembers+1)*20]:
-                                            dataMid.append(dataMention.mid)
-                                            no += 1
-                                            ret_ += "\n╠ {}. @!".format(str(no))
-                                    ret_ += "\n╚════➢ Total {} Members".format(str(len(dataMid)))
-                                    cl.sendMention(to, ret_, dataMid)
+                            group = nadya.getGroup(msg.to)
+                            nama = [contact.mid for contact in group.members]
+                            k = len(nama)//20
+                            for a in range(k+1):
+                                txt = u''
+                                s=0                                 
+                                b=[]
+                                for i in group.members[a*20 : (a+1)*20]:
+                                    b.append({"S":str(s), "E" :str(s+6), "M":i.mid})
+                                    s += 7
+                                    txt += u'@Alin \n'
+                            cl.sendMessage(to, text=txt, contentMetadata={u'MENTION': json.dumps({'MENTIONEES':b})}, contentType=0)
+                            cl.sendMessage(to, "Total {} Mention".format(str(len(nama)))) 
 
                         elif cmd == "listbot":
                           if wait["selfbot"] == True:
