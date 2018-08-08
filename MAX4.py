@@ -293,130 +293,130 @@ def command(text):
 def help():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage = "🔰 【さัএπัஞ✵ບิथℓℓҨतΩ】 Menu\n   Gunakan「 " + key + " 」di depannya\n\n" + \
-                  "🔰 " + key + "Me\n" + \
-                  "🔰 " + key + "Mid「@」\n" + \
-                  "🔰 " + key + "Info「@」\n" + \
-                  "🔰 " + key + "Nk「@」\n" + \
-                  "🔰 " + key + "Kick1「@」\n" + \
-                  "🔰 " + key + "Mybot\n" + \
-                  "🔰 " + key + "Status\n" + \
-                  "🔰 " + key + "About\n" + \
-                  "🔰 " + key + "Restart\n" + \
-                  "🔰 " + key + "Runtime\n" + \
-                  "🔰 " + key + "Creator\n" + \
-                  "🔰 " + key + "Speed/Sp\n" + \
-                  "🔰 " + key + "Sprespon\n" + \
-                  "🔰 " + key + "Tagall\n" + \
-                  "🔰 " + key + "Joinall\n" + \
-                  "🔰 " + key + "Byeall\n" + \
-                  "🔰 " + key + "Byeme\n" + \
-                  "🔰 " + key + "Leave「Namagrup」\n" + \
-                  "🔰 " + key + "Ginfo\n" + \
-                  "🔰 " + key + "Open\n" + \
-                  "🔰 " + key + "Close\n" + \
-                  "🔰 " + key + "Url grup\n" + \
-                  "🔰 " + key + "Gruplist\n" + \
-                  "🔰 " + key + "Infogrup「angka」\n" + \
-                  "🔰 " + key + "Infomem「angka」\n" + \
-                  "🔰 " + key + "Remove chat\n" + \
-                  "🔰 " + key + "Lurking「on/off」\n" + \
-                  "🔰 " + key + "Lurkers\n" + \
-                  "🔰 " + key + "Sider「on/off」\n" + \
-                  "🔰 " + key + "Updatefoto\n" + \
-                  "🔰 " + key + "Updategrup\n" + \
-                  "🔰 " + key + "Updatebot\n" + \
-                  "🔰 " + key + "Broadcast:「Text」\n" + \
-                  "🔰 " + key + "Setkey「New Key」\n" + \
-                  "🔰 " + key + "Mykey\n" + \
-                  "🔰 " + key + "Resetkey\n" + \
-                  "\n🔰 【さัএπัஞ✵ບิथℓℓҨतΩ】 Media\n   Gunakan「 " + key + " 」di depannya\n\n" + \
-                  "🔰 " + key + "ID line:「Id Line nya」\n" + \
-                  "🔰 " + key + "Sholat:「Nama Kota」\n" + \
-                  "🔰 " + key + "Cuaca:「Nama Kota」\n" + \
-                  "🔰 " + key + "Lokasi:「Nama Kota」\n" + \
-                  "🔰 " + key + "Music:「Judul Lagu」\n" + \
-                  "🔰 " + key + "Lirik:「Judul Lagu」\n" + \
-                  "🔰 " + key + "Ytmp3:「Judul Lagu」\n" + \
-                  "🔰 " + key + "Ytmp4:「Judul Video」\n" + \
-                  "🔰 " + key + "Profileig:「Nama IG」\n" + \
-                  "🔰 " + key + "Cekdate:「tgl-bln-thn」\n" + \
-                  "🔰 " + key + "Jumlah:「angka」\n" + \
-                  "🔰 " + key + "Spamtag「@」\n" + \
-                  "🔰 " + key + "Spamcall:「jumlahnya」\n" + \
-                  "🔰 " + key + "Spamcall\n" + \
-                  "\n🔰 【さัএπัஞ✵ບิथℓℓҨतΩ】 Protection\n   Jangan gunakan「 " + key + " 」di depannya\n\n" + \
-                  "🔰 " + key + "Notag「on/off」\n" + \
-                  "🔰 " + key + "Semuapro「on/off」\n" + \
-                  "🔰 " + key + "Protecturl「on/off」\n" + \
-                  "🔰 " + key + "Protectjoin「on/off」\n" + \
-                  "🔰 " + key + "Protectkick「on/off」\n" + \
-                  "🔰 " + key + "Protectcancel「on/off」\n" + \
-                  "\n🔰 【さัএπัஞ✵ບิथℓℓҨतΩ】 Setting\n   Jangan gunakan「 " + key + " 」di depannya\n\n" + \
-                  "🔰 " + key + "Sticker「on/off」\n" + \
-                  "🔰 " + key + "Respon「on/off」\n" + \
-                  "🔰 " + key + "Contact「on/off」\n" + \
-                  "🔰 " + key + "Autojoin「on/off」\n" + \
-                  "🔰 " + key + "Autoadd「on/off」\n" + \
-                  "🔰 " + key + "Welcome「on/off」\n" + \
-                  "🔰 " + key + "Autoleave「on/off」\n" + \
-                  "\n🔰 【さัএπัஞ✵ບิथℓℓҨतΩ】 Admin\n    Jangan gunakan「 " + key + " 」di depannya\n\n" + \
-                  "🔰 " + key + "Admin:on\n" + \
-                  "🔰 " + key + "Admin:repeat\n" + \
-                  "🔰 " + key + "Staff:on\n" + \
-                  "🔰 " + key + "Staff:repeat\n" + \
-                  "🔰 " + key + "Bot:on\n" + \
-                  "🔰 " + key + "Bot:repeat\n" + \
-                  "🔰 " + key + "Adminadd「@」\n" + \
-                  "🔰 " + key + "Admindell「@」\n" + \
-                  "🔰 " + key + "Staffadd「@」\n" + \
-                  "🔰 " + key + "Staffdell「@」\n" + \
-                  "🔰 " + key + "Botadd「@」\n" + \
-                  "🔰 " + key + "Botdell「@」\n" + \
-                  "🔰 " + key + "Refresh\n" + \
-                  "🔰 " + key + "Listbot\n" + \
-                  "🔰 " + key + "Listadmin\n" + \
-                  "🔰 " + key + "Listprotect\n" + \
+    helpMessage = "🇱🇰 【さัএπัஞ✵ບิथℓℓҨतΩ】 Menu\n   Gunakan「 " + key + " 」di depannya\n\n" + \
+                  "👿 " + key + "Me\n" + \
+                  "👿 " + key + "Mid「@」\n" + \
+                  "👿 " + key + "Info「@」\n" + \
+                  "👿 " + key + "Nk「@」\n" + \
+                  "👿 " + key + "Kick1「@」\n" + \
+                  "👿 " + key + "Mybot\n" + \
+                  "👿 " + key + "Status\n" + \
+                  "👿 " + key + "About\n" + \
+                  "👿 " + key + "Restart\n" + \
+                  "👿 " + key + "Runtime\n" + \
+                  "👿 " + key + "Creator\n" + \
+                  "👿 " + key + "Speed/Sp\n" + \
+                  "👿 " + key + "Sprespon\n" + \
+                  "👿 " + key + "Tagall\n" + \
+                  "👿 " + key + "Joinall\n" + \
+                  "👿 " + key + "Byeall\n" + \
+                  "👿 " + key + "Byeme\n" + \
+                  "👿 " + key + "Leave「Namagrup」\n" + \
+                  "👿 " + key + "Ginfo\n" + \
+                  "👿 " + key + "Open\n" + \
+                  "👿 " + key + "Close\n" + \
+                  "👿 " + key + "Url grup\n" + \
+                  "👿 " + key + "Gruplist\n" + \
+                  "👿 " + key + "Infogrup「angka」\n" + \
+                  "👿 " + key + "Infomem「angka」\n" + \
+                  "👿 " + key + "Remove chat\n" + \
+                  "👿 " + key + "Lurking「on/off」\n" + \
+                  "👿 " + key + "Lurkers\n" + \
+                  "👿 " + key + "Sider「on/off」\n" + \
+                  "👿 " + key + "Updatefoto\n" + \
+                  "👿 " + key + "Updategrup\n" + \
+                  "👿 " + key + "Updatebot\n" + \
+                  "👿 " + key + "Broadcast:「Text」\n" + \
+                  "👿 " + key + "Setkey「New Key」\n" + \
+                  "👿 " + key + "Mykey\n" + \
+                  "👿 " + key + "Resetkey\n" + \
+                  "\n🇱🇰 【さัএπัஞ✵ບิथℓℓҨतΩ】 Media\n   Gunakan「 " + key + " 」di depannya\n\n" + \
+                  "👿 " + key + "ID line:「Id Line nya」\n" + \
+                  "👿 " + key + "Sholat:「Nama Kota」\n" + \
+                  "👿 " + key + "Cuaca:「Nama Kota」\n" + \
+                  "👿 " + key + "Lokasi:「Nama Kota」\n" + \
+                  "👿 " + key + "Music:「Judul Lagu」\n" + \
+                  "👿 " + key + "Lirik:「Judul Lagu」\n" + \
+                  "👿 " + key + "Ytmp3:「Judul Lagu」\n" + \
+                  "👿 " + key + "Ytmp4:「Judul Video」\n" + \
+                  "👿 " + key + "Profileig:「Nama IG」\n" + \
+                  "👿 " + key + "Cekdate:「tgl-bln-thn」\n" + \
+                  "👿 " + key + "Jumlah:「angka」\n" + \
+                  "👿 " + key + "Spamtag「@」\n" + \
+                  "👿 " + key + "Spamcall:「jumlahnya」\n" + \
+                  "👿 " + key + "Spamcall\n" + \
+                  "\n🇱🇰 【さัএπัஞ✵ບิथℓℓҨतΩ】 Protection\n   Jangan gunakan「 " + key + " 」di depannya\n\n" + \
+                  "👿 " + key + "Notag「on/off」\n" + \
+                  "👿 " + key + "Semuapro「on/off」\n" + \
+                  "👿 " + key + "Protecturl「on/off」\n" + \
+                  "👿 " + key + "Protectjoin「on/off」\n" + \
+                  "👿 " + key + "Protectkick「on/off」\n" + \
+                  "👿 " + key + "Protectcancel「on/off」\n" + \
+                  "\n🇱🇰 【さัএπัஞ✵ບิथℓℓҨतΩ】 Setting\n   Jangan gunakan「 " + key + " 」di depannya\n\n" + \
+                  "👿 " + key + "Sticker「on/off」\n" + \
+                  "👿 " + key + "Respon「on/off」\n" + \
+                  "👿 " + key + "Contact「on/off」\n" + \
+                  "👿 " + key + "Autojoin「on/off」\n" + \
+                  "👿 " + key + "Autoadd「on/off」\n" + \
+                  "👿 " + key + "Welcome「on/off」\n" + \
+                  "👿 " + key + "Autoleave「on/off」\n" + \
+                  "\n🇱🇰 【さัএπัஞ✵ບิथℓℓҨतΩ】 Admin\n    Jangan gunakan「 " + key + " 」di depannya\n\n" + \
+                  "👿 " + key + "Admin:on\n" + \
+                  "👿 " + key + "Admin:repeat\n" + \
+                  "👿 " + key + "Staff:on\n" + \
+                  "👿 " + key + "Staff:repeat\n" + \
+                  "👿 " + key + "Bot:on\n" + \
+                  "👿 " + key + "Bot:repeat\n" + \
+                  "👿 " + key + "Adminadd「@」\n" + \
+                  "👿 " + key + "Admindell「@」\n" + \
+                  "👿 " + key + "Staffadd「@」\n" + \
+                  "👿 " + key + "Staffdell「@」\n" + \
+                  "👿 " + key + "Botadd「@」\n" + \
+                  "👿 " + key + "Botdell「@」\n" + \
+                  "👿 " + key + "Refresh\n" + \
+                  "👿 " + key + "Listbot\n" + \
+                  "👿 " + key + "Listadmin\n" + \
+                  "👿 " + key + "Listprotect\n" + \
                   "\nKetik「 Refresh 」jika sudah\nmenggunakan command diatas...\n"
     return helpMessage
 
 def helpbot():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage1 = "🔰 【さัএπัஞ✵ບิथℓℓҨतΩ】 Blacklist\n   Jangan gunakan「 " + key + " 」di depannya\n\n" + \
-                  "🔰 " + key + "Blc\n" + \
-                  "🔰 " + key + "Ban:on\n" + \
-                  "🔰 " + key + "Unban:on\n" + \
-                  "🔰 " + key + "Ban「@」\n" + \
-                  "🔰 " + key + "Unban「@」\n" + \
-                  "🔰 " + key + "Talkban「@」\n" + \
-                  "🔰 " + key + "Untalkban「@」\n" + \
-                  "🔰 " + key + "Talkban:on\n" + \
-                  "🔰 " + key + "Untalkban:on\n" + \
-                  "🔰 " + key + "Banlist\n" + \
-                  "🔰 " + key + "Talkbanlist\n" + \
-                  "🔰 " + key + "Clearban\n" + \
-                  "🔰 " + key + "Refresh\n" + \
-                  "\n🔰 【さัএπัஞ✵ບิथℓℓҨतΩ】 Menu\n    Gunakan「 " + key + " 」di depannya\n\n" + \
-                  "🔰 " + key + "Cek sider\n" + \
-                  "🔰 " + key + "Cek spam\n" + \
-                  "🔰 " + key + "Cek pesan \n" + \
-                  "🔰 " + key + "Cek respon \n" + \
-                  "🔰 " + key + "Cek welcome\n" + \
-                  "🔰 " + key + "Set sider:「Text」\n" + \
-                  "🔰 " + key + "Set spam:「Text」\n" + \
-                  "🔰 " + key + "Set pesan:「Text」\n" + \
-                  "🔰 " + key + "Set respon:「Text」\n" + \
-                  "🔰 " + key + "Set welcome:「Text」\n" + \
-                  "🔰 " + key + "Myname:「Nama」\n" + \
-                  "🔰 " + key + "Bot1name:「Nama」\n" + \
-                  "🔰 " + key + "Bot2name:「Nama」\n" + \
-                  "🔰 " + key + "Bot3name:「Nama」\n" + \
-                  "🔰 " + key + "Bot1up「Kirim fotonya」\n" + \
-                  "🔰 " + key + "Bot2up「Kirim fotonya」\n" + \
-                  "🔰 " + key + "Bot3up「Kirim fotonya」\n" + \
-                  "🔰 " + key + "Gift:「Mid korban」「Jumlah」\n" + \
-                  "🔰 " + key + "Spam:「Mid korban」「Jumlah」\n" + \
+    helpMessage1 = "🇱🇰 【さัএπัஞ✵ບิथℓℓҨतΩ】 Blacklist\n   Jangan gunakan「 " + key + " 」di depannya\n\n" + \
+                  "😈 " + key + "Blc\n" + \
+                  "😈 " + key + "Ban:on\n" + \
+                  "😈 " + key + "Unban:on\n" + \
+                  "😈 " + key + "Ban「@」\n" + \
+                  "😈 " + key + "Unban「@」\n" + \
+                  "😈 " + key + "Talkban「@」\n" + \
+                  "😈 " + key + "Untalkban「@」\n" + \
+                  "😈 " + key + "Talkban:on\n" + \
+                  "😈 " + key + "Untalkban:on\n" + \
+                  "😈 " + key + "Banlist\n" + \
+                  "😈 " + key + "Talkbanlist\n" + \
+                  "😈 " + key + "Clearban\n" + \
+                  "😈 " + key + "Refresh\n" + \
+                  "\n🇱🇰 【さัএπัஞ✵ບิथℓℓҨतΩ】 Menu\n    Gunakan「 " + key + " 」di depannya\n\n" + \
+                  "😈 " + key + "Cek sider\n" + \
+                  "😈 " + key + "Cek spam\n" + \
+                  "😈 " + key + "Cek pesan \n" + \
+                  "😈 " + key + "Cek respon \n" + \
+                  "😈 " + key + "Cek welcome\n" + \
+                  "😈 " + key + "Set sider:「Text」\n" + \
+                  "😈 " + key + "Set spam:「Text」\n" + \
+                  "😈 " + key + "Set pesan:「Text」\n" + \
+                  "😈 " + key + "Set respon:「Text」\n" + \
+                  "😈 " + key + "Set welcome:「Text」\n" + \
+                  "😈 " + key + "Myname:「Nama」\n" + \
+                  "😈 " + key + "Bot1name:「Nama」\n" + \
+                  "😈 " + key + "Bot2name:「Nama」\n" + \
+                  "😈 " + key + "Bot3name:「Nama」\n" + \
+                  "😈 " + key + "Bot1up「Kirim fotonya」\n" + \
+                  "😈 " + key + "Bot2up「Kirim fotonya」\n" + \
+                  "😈 " + key + "Bot3up「Kirim fotonya」\n" + \
+                  "😈 " + key + "Gift:「Mid korban」「Jumlah」\n" + \
+                  "😈 " + key + "Spam:「Mid korban」「Jumlah」\n" + \
                   "\nKetik「 Refresh 」jika sudah\nmenggunakan command diatas...\n"
     return helpMessage1
 
