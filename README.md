@@ -41,6 +41,7 @@ pip3 install youtube_dl
 git clone https://github.com/0954517662/SBpro
 
 cd SBpro
-python3 SB.py
+
+python3 MAX.py
 
 LINE ID: self_js
