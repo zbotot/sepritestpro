@@ -15,7 +15,7 @@ cl.log("Auth Token : " + str(cl.authToken))
 channel = LineChannel(cl)
 cl.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-ki = LineClient(authToken='EvtOTawF2SetTuf54CZ8.VsA2rcgs+TaVmXlFik1nUa.TR2wUDTkGsjLre1J/n2tgnxNCSiBpvQgv3rkfa1ZmfU=')
+ki = LineClient(authToken='EvOAkwEVpKfQ85hn5c48.VsA2rcgs+TaVmXlFik1nUa.hiao25l7iJ+hJr13ofFpH+tKVPqlTEJ7rsHOVReX7Lo=')
 ki.log("Auth Token : " + str(ki.authToken))
 channel1 = LineChannel(ki)
 ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
