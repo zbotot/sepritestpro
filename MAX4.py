@@ -1674,6 +1674,7 @@ def bot(op):
                           if wait["selfbot"] == True:
                             group = cl.getGroup(msg.to)
                             nama = [contact.mid for contact in group.members]
+                            nm1, nm2, nm3, nm4, jml = [], [], [], [], len(nama)
                             k = len(nama)//20
                             for a in range(k+1):
                                 txt = u''
