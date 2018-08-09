@@ -1669,61 +1669,23 @@ def bot(op):
                                 sw.updateProfile(profile)
                                 sw.sendMessage(msg.to,"Nama diganti jadi " + string + "")
 
-#===========BOT UPDATE============#
-                        elif cmd == "tagall" or text.lower() == 'tag':
+#===========BOT UPDATE============#                              
+                        elif cmd == "mentionall":
                           if wait["selfbot"] == True:
-                            if msg._from in admin:
                                group = cl.getGroup(msg.to)
                                nama = [contact.mid for contact in group.members]
                                nm1, nm2, nm3, nm4, jml = [], [], [], [], len(nama)
-                               if jml <= 100:
-                                   mentionMembers(msg.to, nama)
-                               if jml > 100 and jml < 200:
-                                   for i in range (0, 99):
-                                       nm1 += [nama[i]]
-                                   mentionMembers(msg.to, nm1)
-                                   for j in range (100, len(nama)-1):
-                                       nm2 += [nama[j]]
-                                   mentionMembers(msg.to, nm2)
-                               if jml > 200 and jml < 300:
-                                   for i in range (0, 99):
-                                       nm1 += [nama[i]]
-                                   mentionMembers(msg.to, nm1)
-                                   for j in range (100, 199):
-                                       nm2 += [nama[j]]
-                                   mentionMembers(msg.to, nm2)
-                                   for k in range (200, len(nama)-1):
-                                       nm3 += [nama[k]]
-                                   mentionMembers(msg.to, nm3)
-                               if jml > 300 and jml < 400:
-                                   for i in range (0, 99):
-                                       nm1 += [nama[i]]
-                                   mentionMembers(msg.to, nm1)
-                                   for j in range (100, 199):
-                                       nm2 += [nama[j]]
-                                   mentionMembers(msg.to, nm2)
-                                   for k in range (200, 299):
-                                       nm3 += [nama[k]]
-                                   mentionMembers(msg.to, nm3)
-                                   for l in range (300, len(nama)-1):
-                                       nm4 += [nama[l]]
-                                   mentionMembers(msg.to, nm4)
-                               if jml > 400 and jml < 500:
-                                   for i in range (0, 99):
-                                       nm1 += [nama[i]]
-                                   mentionMembers(msg.to, nm1)
-                                   for j in range (100, 199):
-                                       nm2 += [nama[j]]
-                                   mentionMembers(msg.to, nm2)
-                                   for k in range (200, 299):
-                                       nm3 += [nama[k]]
-                                   mentionMembers(msg.to, nm3)
-                                   for l in range (300, 399):
-                                       nm4 += [nama[l]]
-                                   mentionMembers(msg.to, nm4)
-                                   for m in range (400, len(nama)-1):
-                                       nm5 += [nama[m]]
-                                   mentionMembers(msg.to, nm5)
+                               k = len(nama)//20
+                               for a in range(k+1):
+                                   txt = u''
+                                   s=0                                 
+                                   b=[]
+                                   for i in group.members[a*20 : (a+1)*20]:
+                                       b.append({"S":str(s), "E" :str(s+6), "M":i.mid})
+                                       s += 7
+                                       txt += u'@Alin \n'
+                               cl.sendMessage(to, text=txt, contentMetadata={u'MENTION': json.dumps({'MENTIONEES':b})}, contentType=0)
+                               cl.sendMessage(to, "Total {} Mention".format(str(len(nama))))
 
                         elif cmd == "listbot":
                           if wait["selfbot"] == True:
