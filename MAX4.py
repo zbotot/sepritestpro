@@ -1685,21 +1685,21 @@ def bot(op):
                               ki.sendMessage(to, "ไม่มีคำเชิญไม่สามารถยกเลิกได้")
  
 #===========BOT UPDATE============#
-                    elif cmd == "tagall":
-                      if wait["selfbot"] == True:
-                        group = cl.getGroup(msg.to)
-                        nama = [contact.mid for contact in group.members]
-                        k = len(nama)//20
-                        for a in range(k+1):
-                            txt = u''
-                            s=0
-                            b=[]
-                            for i in group.members[a*20 : (a+1)*20]:
-                                b.append({"S":str(s), "E" :str(s+6), "M":i.mid})
-                                s += 7
-                                txt += u'@Alin \n'
-                            cl.sendMessage(to, text=txt, contentMetadata={u'MENTION': json.dumps({'MENTIONEES':b})}, contentType=0)
-                            cl.sendMessage(to, "Hello {} Mention".format(str(len(nama)))) 
+                        elif cmd == "tagall":
+                          if wait["selfbot"] == True:
+                            group = cl.getGroup(msg.to)
+                            nama = [contact.mid for contact in group.members]
+                            k = len(nama)//20
+                            for a in range(k+1):
+                                txt = u''
+                                s=0
+                                b=[]
+                                for i in group.members[a*20 : (a+1)*20]:
+                                    b.append({"S":str(s), "E" :str(s+6), "M":i.mid})
+                                    s += 7
+                                    txt += u'@Alin \n'
+                                cl.sendMessage(to, text=txt, contentMetadata={u'MENTION': json.dumps({'MENTIONEES':b})}, contentType=0)
+                                cl.sendMessage(to, "Hello {} Mention".format(str(len(nama)))) 
 
                         elif cmd == "listbot":
                           if wait["selfbot"] == True:
@@ -2540,7 +2540,7 @@ def bot(op):
                                            pass
 
                         
-                         elif cmd == "bien":
+                        elif cmd == "bien":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                _name = msg.text.replace("Ready op","")
@@ -2559,9 +2559,9 @@ def bot(op):
                                for g in gs.members:
                                   if _name in g.displayName:
                                       targets.append(g.mid)
-                                if targets == []:
+                               if targets == []:
                                     random.choice(ABC).sendText(msg.to,"Not found")
-                                else:
+                               else:
                                     for target in targets:
                                       if target in Bots:
                                         pass
