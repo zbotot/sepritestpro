@@ -1668,7 +1668,22 @@ def bot(op):
                                 profile.displayName = string
                                 sw.updateProfile(profile)
                                 sw.sendMessage(msg.to,"Nama diganti jadi " + string + "")
-
+                        
+                        elif cmd == "cancel":
+                          if wait["selfbot"] == True:
+                              X = cl.getGroup(msg.to)
+                          if X.invitee is not None:
+                              gInviMids = (contact.mid for contact in X.invitee)
+                              ginfo = cl.getGroup(msg.to)
+                              sinvitee = str(len(ginfo.invitee))
+                              start = time.time()
+                              for cancelmod in gInviMids:
+                                  cl.cancelGroupInvitation(msg.to, [cancelmod])
+                              elapsed_time = time.time() - start
+                              cl.sendMessage(to, "Cancelall...!" )
+                          else:
+                              cl.sendMessage(to, "ไม่มีคำเชิญไม่สามารถยกเลิกได้")
+ 
 #===========BOT UPDATE============#
                     elif cmd == "tagall":
                       if wait["selfbot"] == True:
