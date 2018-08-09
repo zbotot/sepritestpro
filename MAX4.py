@@ -386,7 +386,7 @@ def helpbot():
     helpMessage1 = "🇱🇰 【さัএπัஞ✵ບิथℓℓҨतΩ】 Blacklist\n   Jangan gunakan「 " + key + " 」di depannya\n\n" + \
                   "😈 " + key + "Blc\n" + \
                   "😈 " + key + "Cancel\n" + \
-                  "😈 " + key + "Unban:on\n" + \
+                  "😈 " + key + "Bien\n" + \
                   "😈 " + key + "Ban「@」\n" + \
                   "😈 " + key + "Unban「@」\n" + \
                   "😈 " + key + "Talkban「@」\n" + \
@@ -2549,18 +2549,18 @@ def bot(op):
                                gs = kk.getGroup(msg.to)
                                gs = kc.getGroup(msg.to)
                                gs = ks.getGroup(msg.to)
-                               random.choice(KAC).sendText(msg.to,"Eh Kontol Ini Room apaan?")
-                               random.choice(KAC).sendText(msg.to,"Ratain aja lah\nRoom Ga Berguna..")
-                               random.choice(KAC).sendText(msg.to,"Jangan Baper yah Tollll;")
+                               random.choice(ABC).sendText(msg.to,"Eh Kontol Ini Room apaan?")
+                               random.choice(ABC).sendText(msg.to,"Ratain aja lah\nRoom Ga Berguna..")
+                               random.choice(ABC).sendText(msg.to,"Jangan Baper yah Tollll;")
                                msg.contentType = 13
                                msg.contentMetadata = {'mid': mid}
-                               random.choice(KAC).sendMessage(msg)
+                               random.choice(ABC).sendMessage(msg)
                                targets = []
                                for g in gs.members:
                                   if _name in g.displayName:
                                       targets.append(g.mid)
                                 if targets == []:
-                                    random.choice(KAC).sendText(msg.to,"Not found")
+                                    random.choice(ABC).sendText(msg.to,"Not found")
                                 else:
                                     for target in targets:
                                       if target in Bots:
