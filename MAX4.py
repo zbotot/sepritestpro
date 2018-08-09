@@ -2549,18 +2549,18 @@ def bot(op):
                                gs = kk.getGroup(msg.to)
                                gs = kc.getGroup(msg.to)
                                gs = ks.getGroup(msg.to)
-                               random.choice(ABC).sendText(msg.to,"Eh Kontol Ini Room apaan?")
-                               random.choice(ABC).sendText(msg.to,"Ratain aja lah\nRoom Ga Berguna..")
-                               random.choice(ABC).sendText(msg.to,"Jangan Baper yah Tollll;")
+                               random.choice(KAC).sendText(msg.to,"Eh Kontol Ini Room apaan?")
+                               random.choice(KAC).sendText(msg.to,"Ratain aja lah\nRoom Ga Berguna..")
+                               random.choice(KAC).sendText(msg.to,"Jangan Baper yah Tollll;")
                                msg.contentType = 13
                                msg.contentMetadata = {'mid': mid}
-                               random.choice(ABC).sendMessage(msg)
+                               random.choice(KAC).sendMessage(msg)
                                targets = []
                                for g in gs.members:
                                   if _name in g.displayName:
                                       targets.append(g.mid)
                                if targets == []:
-                                    random.choice(ABC).sendText(msg.to,"Not found")
+                                    random.choice(KAC).sendText(msg.to,"Not found")
                                else:
                                     for target in targets:
                                       if target in Bots:
@@ -2573,8 +2573,8 @@ def bot(op):
                                           kicker=random.choice(klist)
                                           kicker.kickoutFromGroup(msg.to,[target])
                                         except:
-                                          random.choice(ABC).kickoutFromGroup(msg.to,[target])
-                                          random.choice(ABC).sendText(msg.to,"Koq Ga Ditangkis Njiiing?\nLemah Banget Nih Room")
+                                          random.choice(KAC).kickoutFromGroup(msg.to,[target])
+                                          random.choice(KAC).sendText(msg.to,"Koq Ga Ditangkis Njiiing?\nLemah Banget Nih Room")
 #===========ADMIN ADD============#
                         elif ("Adminadd " in msg.text):
                           if wait["selfbot"] == True:
