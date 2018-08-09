@@ -1912,6 +1912,18 @@ def bot(op):
                                elapsed_time = time.time() - start
                                cl.sendMessage(msg.to, "{} detik".format(str(elapsed_time)))
 
+                        elif cmd == "sp bot" or cmd == "spb":
+                          if wait["selfbot"] == True:
+                            if msg._from in admin:
+                               start = time.time()
+                               ki.sendMessage(msg.to, "Progres speed...")
+                               elapsed_time = time.time() - start
+                               ki.sendMessage(msg.to, "{} detik".format(str(elapsed_time)))
+                               elapsed_time = time.time() - start
+                               kk.sendMessage(msg.to, "{} detik".format(str(elapsed_time)))
+                               elapsed_time = time.time() - start
+                               kc.sendMessage(msg.to, "{} detik".format(str(elapsed_time)))
+                      
                         elif cmd == "lurking on":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
