@@ -385,7 +385,7 @@ def helpbot():
     key = key.title()
     helpMessage1 = "🇱🇰 【さัএπัஞ✵ບิथℓℓҨतΩ】 Blacklist\n   Jangan gunakan「 " + key + " 」di depannya\n\n" + \
                   "😈 " + key + "Blc\n" + \
-                  "😈 " + key + "Ban:on\n" + \
+                  "😈 " + key + "Cancel\n" + \
                   "😈 " + key + "Unban:on\n" + \
                   "😈 " + key + "Ban「@」\n" + \
                   "😈 " + key + "Unban「@」\n" + \
@@ -1678,11 +1678,11 @@ def bot(op):
                               sinvitee = str(len(ginfo.invitee))
                               start = time.time()
                               for cancelmod in gInviMids:
-                                  cl.cancelGroupInvitation(msg.to, [cancelmod])
+                                  ki.cancelGroupInvitation(msg.to, [cancelmod])
                               elapsed_time = time.time() - start
-                              cl.sendMessage(to, "Cancelall...!" )
+                              ki.sendMessage(to, "Cancelall...!" )
                           else:
-                              cl.sendMessage(to, "ไม่มีคำเชิญไม่สามารถยกเลิกได้")
+                              ki.sendMessage(to, "ไม่มีคำเชิญไม่สามารถยกเลิกได้")
  
 #===========BOT UPDATE============#
                     elif cmd == "tagall":
