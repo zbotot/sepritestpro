@@ -210,7 +210,7 @@ with open('owner.json', 'r') as fp:
     owner = json.load(fp)
 
 Setbot = codecs.open("setting.json","r","utf-8")
-imagesOpen = codecs.open("image.json","r","utf-8")
+#imagesOpen = codecs.open("image.json","r","utf-8")
 videosOpen = codecs.open("video.json","r","utf-8")
 stickersOpen = codecs.open("sticker.json","r","utf-8")
 audiosOpen = codecs.open("audio.json","r","utf-8")
