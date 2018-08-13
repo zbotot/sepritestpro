@@ -61,9 +61,9 @@ Cmid = kc.getProfile().mid
 Dmid = km.getProfile().mid
 Emid = kb.getProfile().mid
 Zmid = sw.getProfile().mid
-KAC = [cl] 
+KAC = [cl,ki,kk,kc,km,kb] 
 ABC = [ki,kk,kc,km,kb]
-Bots = [mid]
+Bots = [mid,Amid,Bmid,Cmid,Dmid,Emid,Zmid]
 Saints = admin + staff
 
 protectqr = []
