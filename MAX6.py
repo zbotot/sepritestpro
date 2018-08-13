@@ -17,52 +17,52 @@ cl.log("Auth Token : " + str(cl.authToken))
 channel = LineChannel(cl)
 cl.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-#ki = LineClient(authToken='')
-#ki.log("Auth Token : " + str(ki.authToken))
-#channel1 = LineChannel(ki)
-#ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
+ki = LineClient(authToken='')
+ki.log("Auth Token : " + str(ki.authToken))
+channel1 = LineChannel(ki)
+ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
 
-#kk = LineClient(authToken='')
-#kk.log("Auth Token : " + str(kk.authToken))
-#channel2 = LineChannel(kk)
-#kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
+kk = LineClient(authToken='')
+kk.log("Auth Token : " + str(kk.authToken))
+channel2 = LineChannel(kk)
+kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
 
-#kc = LineClient(authToken='')
-#kc.log("Auth Token : " + str(kc.authToken))
-#channel3 = LineChannel(kc)
-#kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
+kc = LineClient(authToken='')
+kc.log("Auth Token : " + str(kc.authToken))
+channel3 = LineChannel(kc)
+kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
 
-#km = LineClient(authToken='')
-#km.log("Auth Token : " + str(km.authToken))
-#channel4 = LineChannel(km)
-#km.log("Channel Access Token : " + str(channel4.channelAccessToken))
+km = LineClient(authToken='')
+km.log("Auth Token : " + str(km.authToken))
+channel4 = LineChannel(km)
+km.log("Channel Access Token : " + str(channel4.channelAccessToken))
 
-#kb = LineClient(authToken='')
-#kb.log("Auth Token : " + str(kb.authToken))
-#channel5 = LineChannel(kb)
-#kb.log("Channel Access Token : " + str(channel5.channelAccessToken))
+kb = LineClient(authToken='')
+kb.log("Auth Token : " + str(kb.authToken))
+channel5 = LineChannel(kb)
+kb.log("Channel Access Token : " + str(channel5.channelAccessToken))
 
-#sw = LineClient(authToken='')
-#sw.log("Auth Token : " + str(sw.authToken))
-#channel6 = LineChannel(sw)
-#sw.log("Channel Access Token : " + str(channel6.channelAccessToken))
+sw = LineClient(authToken='')
+sw.log("Auth Token : " + str(sw.authToken))
+channel6 = LineChannel(sw)
+sw.log("Channel Access Token : " + str(channel6.channelAccessToken))
 
 poll = LinePoll(cl)
 call = LineCall(cl)
-creator = ["u9f478c580a9c4e1de5e407e9b10c2da1"]
-owner = ["u9f478c580a9c4e1de5e407e9b10c2da1"]
-admin = ["u9f478c580a9c4e1de5e407e9b10c2da1","u31d8aba9dff04c75242f2a2097b8adae"]
-staff = ["u9f478c580a9c4e1de5e407e9b10c2da1","u31d8aba9dff04c75242f2a2097b8adae"]
+creator = ["u4862fe4b182b2fd194a3108e2f3662e8"]
+owner = ["u4862fe4b182b2fd194a3108e2f3662e8"]
+admin = ["u4862fe4b182b2fd194a3108e2f3662e8","ue1d6a794435130d139f9c5dde19aa9e5"]
+staff = ["u4862fe4b182b2fd194a3108e2f3662e8","ue1d6a794435130d139f9c5dde19aa9e5"]
 lineProfile = cl.getProfile()
 mid = cl.getProfile().mid
-#mid = ki.getProfile().mid
-#Bmid = kk.getProfile().mid
-#Cmid = kc.getProfile().mid
-#Dmid = km.getProfile().mid
-#Emid = kb.getProfile().mid
-#Zmid = sw.getProfile().mid
+Amid = ki.getProfile().mid
+Bmid = kk.getProfile().mid
+Cmid = kc.getProfile().mid
+Dmid = km.getProfile().mid
+Emid = kb.getProfile().mid
+Zmid = sw.getProfile().mid
 KAC = [cl] 
-#ABC = [ki,kk,kc,km,kb]
+ABC = [ki,kk,kc,km,kb]
 Bots = [mid]
 Saints = admin + staff
 
@@ -76,10 +76,10 @@ msg_dict = {}
 msg_dict1 = {}
 
 responsename1 = cl.getProfile().displayName
-#responsename2 = kk.getProfile().displayName
-#responsename3 = kc.getProfile().displayName
-#responsename4 = km.getProfile().displayName
-#responsename5 = kb.getProfile().displayName
+responsename2 = kk.getProfile().displayName
+responsename3 = kc.getProfile().displayName
+responsename4 = km.getProfile().displayName
+responsename5 = kb.getProfile().displayName
 
 settings = {
     "Picture":False,
@@ -139,9 +139,9 @@ wait = {
     "talkban":False,
     "contact":False,
     "invite":False,
-    'autoJoin':False,
-    'autoAdd':False,
-    'autoBlock':True,
+    'autoJoin':Ture,
+    'autoAdd':Ture,
+    'autoBlock':False,
     'autoCancel':{"on":True,"members":10},
     'Timeline':False,
     'leave':False,
@@ -149,7 +149,7 @@ wait = {
     'autoLeave1':False,
     "detectMention":False,
     "mentionKick":False,
-    "welcomeOn":False,
+    "welcomeOn":True,
     "stickerOn":False,
     "Addsticker":{
             "name": "",
@@ -160,16 +160,16 @@ wait = {
     "Images":{},
     "Img":{},
     "Addimage":{
-            "name": "",
+            "name": "【さัএπัஞ✵ບิथℓℓҨतΩ】",
             "status":False
             },
     "Videos":{},
     "Addaudio":{
-            "name": "",
+            "name": "【さัএπัஞ✵ບิथℓℓҨतΩ】",
             "status":False
             },
     "Addvideo":{
-            "name": "",
+            "name": "【さัএπัஞ✵ບิथℓℓҨतΩ】",
             "status":False
             },
     "unsend":False,
@@ -177,7 +177,7 @@ wait = {
     "Respontag":"gk nyangka bgt klo trnyata km yg nge-tag ,sumpah..",
     "welcome":"selamat datang..masa depanku..",
     "leave":"huffh ,bye aja dah..masa lalu",
-    "comment":"[SELF BOT]\n[By: ᴄᴀʟᴏɴ ᴀʟᴍᴀʀʜᴜᴍ™]\nhttp://line.me/ti/p/calon_almarhum99",
+    "comment":"[SELF BOT]\n[By:【さัএπัஞ✵ບิथℓℓҨतΩ】]\nhttp://line.me/ti/p/~max_pv",
     "message":"",
     }
 
@@ -204,8 +204,8 @@ myProfile["displayName"] = lineProfile.displayName
 myProfile["statusMessage"] = lineProfile.statusMessage
 myProfile["pictureStatus"] = lineProfile.pictureStatus
 
-#####with open('creator.json', 'r') as fp:
-#    creator = json.load(fp)
+with open('creator.json', 'r') as fp:
+    creator = json.load(fp)
 with open('owner.json', 'r') as fp:
     owner = json.load(fp)
 
@@ -517,7 +517,7 @@ def atend():
 def help():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage = "🌹 COMMAND 🌹" + key + ".1 🔞\n\n" + \
+    helpMessage = "🇱🇰 คำสั่ง 🇱🇰" + key + ".1 😈\n\n" + \
                   "🍀 " + key + "คท\n" + \
                   "🍀 " + key + "ID\n" + \
                   "🍀 " + key + "ID「@」\n" + \
@@ -588,7 +588,7 @@ def help():
                   "🍀 " + key + "Get-zodiak「Zodiak」\n" + \
                   "🍀 " + key + "Get-sholat「Nama Kota」\n" + \
                   "🍀 " + key + "Get-cuaca「Nama Kota」\n" + \
-                  "\n🌹  คำสัง ตั้งค่า เปิด/ปิด 🌹" + key + "🔞\n" + \
+                  "\n🇱🇰  คำสัง ตั้งค่า เปิด/ปิด 🇱🇰" + key + ".2 😈\n" + \
                   "🍄 " + key + "เปิด/ปิด เตะแทค\n" + \
                   "🍄 " + key + "Protectall「on/off」\n" + \
                   "🍄 " + key + "Protecturl「on/off」\n" + \
@@ -609,7 +609,7 @@ def help():
                   "🍄 " + key + "Welcome「on/off」\n" + \
                   "🍄 " + key + "Leave「on/off」\n" + \
                   "🍄 " + key + "Jointicket「on/off」\n" + \
-                  "\n🌹 SETTINGS ADMIN 🌹" + key + "🔞\n" + \
+                  "\n🌹 SETTINGS ADMIN 🌹" + key + ".3 😈\n" + \
                   "🍃 " + key + "Bot:on\n" + \
                   "🍃 " + key + "Bot:expell\n" + \
                   "🍃 " + key + "Staff:on\n" + \
@@ -626,7 +626,7 @@ def help():
                   "🍃 " + key + "Listbot\n" + \
                   "🍃 " + key + "Listadmin\n" + \
                   "🍃 " + key + "Listprotect\n" + \
-                  "\n[By:🌹 ധู้さန້ণق↔ധഖาໄฟ 🌹]\n http://line.me/ti/p/calon_almarhum99\n"
+                  "\n[By:【さัএπัஞ✵ບิथℓℓҨतΩ】]\n http://line.me/ti/p/~max_pv\n"
     return helpMessage
 
 def helpbot():
@@ -672,7 +672,7 @@ def helpbot():
                   "🌺 " + key + "Bot5up「Kirim fotonya」\n" + \
                   "🌺 " + key + "แจก:「Mid korban」「Jumlah」\n" + \
                   "🌺 " + key + "Spam:「Mid korban」「Jumlah」\n" + \
-                  "\n[By:🌹 ധู้さန້ণق↔ധഖาໄฟ 🌹]\n http://line.me/ti/p/calon_almarhum99\n"
+                  "\n[By:【さัএπัஞ✵ບิथℓℓҨतΩ】]\n http://line.me/ti/p/~max_pv\n"
     return helpMessage1
 
 def bot(op):
@@ -685,9 +685,9 @@ def bot(op):
         if op.type == 5:
               if wait["autoAdd"] == True:
                   cl.findAndAddContactsByMid(op.param1)
-                  sendMention(op.param1, op.param1, "[Auto Respon]\n[SELF BOT]\n[By:☬ ᴄᴀʟᴏɴ ᴀʟᴍᴀʀʜᴜᴍ™☬]\nhttp://line.me/ti/p/calon_almarhum99")
+                  sendMention(op.param1, op.param1, "[SELF BOT]\n[By:【さัএπัஞ✵ບิथℓℓҨतΩ】]\nhttp://line.me/ti/p/~max_pv")
                   cl.sendText(op.param1, wait["message"])
-                  cl.sendContact(op.param1, "u31d8aba9dff04c75242f2a2097b8adae")
+                  cl.sendContact(op.param1, "u4862fe4b182b2fd194a3108e2f3662e8")
 
         if op.type == 0:
             return
@@ -1883,7 +1883,7 @@ def bot(op):
                                 zx = ""
                                 zxc = ""
                                 zx2 = []
-                                xpesan =  "[SELF BOT]\n[By.☬ധู้さန້ণق↔ധഖาໄฟ☬]\n• User : "
+                                xpesan =  "[SELF BOT]\n[By.【さัএπัஞ✵ບิथℓℓҨतΩ】]\n• User : "
                                 ret_ = str(helpMessage)
                                 ry = str(ryan.displayName)
                                 pesan = ''
@@ -1904,7 +1904,7 @@ def bot(op):
                                 zx = ""
                                 zxc = ""
                                 zx2 = []
-                                xpesan =  "[SELF BOT]\n[By.☬ധู้さန້ণق↔ധഖาໄฟ☬]\n• User : "
+                                xpesan =  "[SELF BOT]\n[By.【さัএπัஞ✵ບิथℓℓҨतΩ】]\n• User : "
                                 ret_ = str(helpMessage1)
                                 ry = str(ryan.displayName)
                                 pesan = ''
@@ -1922,7 +1922,7 @@ def bot(op):
                             if msg._from in admin:
                                 tz = pytz.timezone("Asia/Jakarta")
                                 timeNow = datetime.now(tz=tz)
-                                md = "\n[SELF BOT]\n[By.☬ധู้さန້ণق↔ധഖาໄฟ☬]\n\n"
+                                md = "\n[SELF BOT]\n[By.【さัএπัஞ✵ບิथℓℓҨतΩ】]\n\n"
                                 if wait["mentionKick"] == True: md+="╠☬➣ เตะแทค  ✔\n"
                                 else: md+="╠☬➣ เตะแทค  ❌\n"
                                 if wait["stickerOn"] == True: md+="╠☬➣ เช็คสติกเกอร์  ✔\n"
@@ -1984,7 +1984,7 @@ def bot(op):
                                 
                         elif cmd == "creator" or text.lower() == 'creator':
                             if msg._from in admin:
-                                cl.sendText(msg.to,"「Created by : Alvian Putra」") 
+                                cl.sendText(msg.to,"「Created by :\n【さัএπัஞ✵ບิथℓℓҨतΩ】」") 
                                 ma = ""
                                 for i in creator:
                                     ma = cl.getContact(i)
@@ -2017,7 +2017,7 @@ def bot(op):
                                 zx = ""
                                 zxc = ""
                                 zx2 = []
-                                xpesan =  "☬SELF BOT☬\n[By.☬ധู้さန້ণق↔ധഖาໄฟ☬] \n• User : "
+                                xpesan =  "[SELF BOT]\n[By.【さัএπัஞ✵ບิथℓℓҨतΩ】] \n• User : "
                                 ret_ = "• \n• ☬กลุ่มทั้งหมด ➣ : {} Group".format(str(len(grouplist)))
                                 ret_ += "\n• ☬เพื่อน ➣ : {} Friend".format(str(len(contactlist)))
                                 ret_ += "\n• ☬บล็อค ➣ : {} Blocked".format(str(len(blockedlist)))
@@ -2037,14 +2037,14 @@ def bot(op):
                                 zxc += pesan2
                                 text = xpesan + zxc + ret_ + ""
                                 cl.sendMessage(to, text, contentMetadata={'MENTION':str('{"MENTIONEES":'+json.dumps(zx2).replace(' ','')+'}')}, contentType=0)
-                                cl.sendContact(to, "u923fca3dc907e047572ad25c24f1d29b")
+                                cl.sendContact(to, "u4862fe4b182b2fd194a3108e2f3662e8")
                             except Exception as e:
                                 cl.sendMessage(msg.to, str(e))
 
                         elif cmd == "คท" or text.lower() == 'คท':
                           if wait["selfbot"] == True:
                             if msg._from in admin:
-                               sendMention(msg.to, sender, "☬ชื่อ เชลบอท☬\n", "")
+                               sendMention(msg.to, sender, "【さัএπัஞ✵ບิथℓℓҨतΩ】\n", "")
                                msg.contentType = 13
                                msg.contentMetadata = {'mid': mid}
                                cl.sendMessage1(msg)
@@ -2179,13 +2179,13 @@ def bot(op):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                try:
-                                   cl.removeAllMessages(op.param2)
+                                #   cl.removeAllMessages(op.param2)
                                    ki.removeAllMessages(op.param2)
                                    kk.removeAllMessages(op.param2)
                                    kc.removeAllMessages(op.param2)
                                    km.removeAllMessages(op.param2)
                                    kb.removeAllMessages(op.param2)
-                                   cl.sendText(msg.to,"👌ทำการลบ ข้อความแชท เรียบร้อยแล้ว..✔")
+                                   cl.sendText(msg.to,"ทำการลบ ข้อความแชท เรียบร้อยแล้ว ✔")
                                except:
                                    pass
 
@@ -2237,7 +2237,7 @@ def bot(op):
                         elif cmd == "รีบอท":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
-                               sendMention(msg.to, sender, " ", "\n👌 รีสตาตร์บอทเรียบร้อยแล้ว✔\nโปรดตั้งค่าใหม่ อีกครั้ง..")
+                               sendMention(msg.to, sender, " ", "\nรีสตาตร์บอทเรียบร้อยแล้ว✔\nโปรดตั้งค่าใหม่ อีกครั้ง..")
                                Setmain["restartPoint"] = msg.to
                                restartBot()
                             
@@ -2250,7 +2250,7 @@ def bot(op):
                                 zx = ""
                                 zxc = ""
                                 zx2 = []
-                                xpesan =  "[By.☬ധู้さန້ণق↔ധഖาໄฟ☬]\n• ชื่อ เชลบอท : "
+                                xpesan =  "[By.【さัএπัஞ✵ບิथℓℓҨतΩ】]\n• ชื่อ เชลบอท : "
                                 ret_ = "• {}".format(str(bot))
                                 ry = str(ryan.displayName)
                                 pesan = ''
@@ -2320,7 +2320,7 @@ def bot(op):
                                 ret_ += "\n☬ลิ้งกลุ่ม ➣ : {}".format(gQr)
                                 ret_ += "\n☬Group Ticket ➣: {}".format(gTicket)
                                 ret_ += "\n☬ลิ้้งรูปกลุ่ม ➣ : http://dl.profile.line-cdn.net/{}".format(G.pictureStatus)
-                                ret_ += "\n[By.☬ധู้さန້ণق↔ധഖาໄฟ☬]"
+                                ret_ += "\n[By.【さัএπัஞ✵ບิथℓℓҨतΩ】]"
                                 ret_ += ""
                                 cl.sendMessage(to, str(ret_))
                                 cl.sendImageWithURL(msg.to, 'http://dl.profile.line-cdn.net/'+G.pictureStatus)
@@ -2949,60 +2949,21 @@ def bot(op):
                                 sw.sendMessage(msg.to,"Nama diganti jadi " + string + "")
 
 #===========BOT UPDATE============#
-                        elif cmd == "tagall" or text.lower() == 'แทค':
+                        elif cmd == "tagall":
                           if wait["selfbot"] == True:
-                            if msg._from in admin:
-                               group = cl.getGroup(msg.to)
-                               nama = [contact.mid for contact in group.members]
-                               nm1, nm2, nm3, nm4, jml = [], [], [], [], len(nama)
-                               if jml <= 100:
-                                   mentionMembers(msg.to, nama)
-                               if jml > 100 and jml < 200:
-                                   for i in range (0, 99):
-                                       nm1 += [nama[i]]
-                                   mentionMembers(msg.to, nm1)
-                                   for j in range (100, len(nama)-1):
-                                       nm2 += [nama[j]]
-                                   mentionMembers(msg.to, nm2)
-                               if jml > 200 and jml < 300:
-                                   for i in range (0, 99):
-                                       nm1 += [nama[i]]
-                                   mentionMembers(msg.to, nm1)
-                                   for j in range (100, 199):
-                                       nm2 += [nama[j]]
-                                   mentionMembers(msg.to, nm2)
-                                   for k in range (200, len(nama)-1):
-                                       nm3 += [nama[k]]
-                                   mentionMembers(msg.to, nm3)
-                               if jml > 300 and jml < 400:
-                                   for i in range (0, 99):
-                                       nm1 += [nama[i]]
-                                   mentionMembers(msg.to, nm1)
-                                   for j in range (100, 199):
-                                       nm2 += [nama[j]]
-                                   mentionMembers(msg.to, nm2)
-                                   for k in range (200, 299):
-                                       nm3 += [nama[k]]
-                                   mentionMembers(msg.to, nm3)
-                                   for l in range (300, len(nama)-1):
-                                       nm4 += [nama[l]]
-                                   mentionMembers(msg.to, nm4)
-                               if jml > 400 and jml < 500:
-                                   for i in range (0, 99):
-                                       nm1 += [nama[i]]
-                                   mentionMembers(msg.to, nm1)
-                                   for j in range (100, 199):
-                                       nm2 += [nama[j]]
-                                   mentionMembers(msg.to, nm2)
-                                   for k in range (200, 299):
-                                       nm3 += [nama[k]]
-                                   mentionMembers(msg.to, nm3)
-                                   for l in range (300, 399):
-                                       nm4 += [nama[l]]
-                                   mentionMembers(msg.to, nm4)
-                                   for m in range (400, len(nama)-1):
-                                       nm5 += [nama[m]]
-                                   mentionMembers(msg.to, nm5)
+                            group = cl.getGroup(to)
+                            midMembers = [contact.mid for contact in group.members]
+                            midSelect = len(midMembers)//20
+                            for mentionMembers in range(midSelect+1):
+                                    no = 0
+                                    ret_ = "╔══[ Mention Members ]"
+                                    dataMid = []
+                                    for dataMention in group.members[mentionMembers*20 : (mentionMembers+1)*20]:
+                                            dataMid.append(dataMention.mid)
+                                            no += 1
+                                            ret_ += "\n╠ {}. @!".format(str(no))
+                            ret_ += "\n╚══[ Total {} Members]".format(str(len(dataMid)))
+                            cl.sendMention(to, ret_, dataMid)
 
                         elif cmd == "listbot":
                           if wait["selfbot"] == True:
@@ -3238,37 +3199,37 @@ def bot(op):
                                start = time.time()
                                sendMention(msg.to, sender, "「 Speed Bots」\n• User ", "")
                                elapsed_time = time.time() - start
-                               cl.sendMessage(msg.to, "[By.☬ധู้さန້ণق↔ധഖาໄฟ☬]\nความเร็วสปีด\n{} ต่อวินาที".format(str(elapsed_time)))
+                               cl.sendMessage(msg.to, "[By.【さัএπัஞ✵ບิथℓℓҨतΩ】\nความเร็วสปีด\n{} ต่อวินาที".format(str(elapsed_time)))
 
                         elif cmd == "spbot":
                             if msg._from in admin:
                                 start = time.time()
-                                sw.sendText("uf0bd4970771f26a8cef66473d59bcc69", '.')
+                                sw.sendText("ue86841a3982b7da6e8094f3c218d79b6", '.')
                                 elapsed_time = time.time() - start
                                 cl.sendText(msg.to, "%s" % (elapsed_time))
                                 
                                 start2 = time.time()
-                                sw.sendText("uf0bd4970771f26a8cef66473d59bcc69", '.')
+                                sw.sendText("ue86841a3982b7da6e8094f3c218d79b6", '.')
                                 elapsed_time = time.time() - start2
                                 ki.sendText(msg.to, "%s" % (elapsed_time))
                                 
                                 start3 = time.time()
-                                sw.sendText("uf0bd4970771f26a8cef66473d59bcc69", '.')
+                                sw.sendText("ue86841a3982b7da6e8094f3c218d79b6", '.')
                                 elapsed_time = time.time() - start3
                                 kk.sendText(msg.to, "%s" % (elapsed_time))
                                 
                                 start4 = time.time()
-                                sw.sendMessage("uf0bd4970771f26a8cef66473d59bcc69", '.')
+                                sw.sendMessage("ue86841a3982b7da6e8094f3c218d79b6", '.')
                                 elapsed_time = time.time() - start4
                                 kc.sendText(msg.to, "%s" % (elapsed_time))
                                 
                                 start5 = time.time()
-                                sw.sendText("uf0bd4970771f26a8cef66473d59bcc69", '.')
+                                sw.sendText("ue86841a3982b7da6e8094f3c218d79b6", '.')
                                 elapsed_time = time.time() - start5
                                 km.sendText(msg.to, "%s" % (elapsed_time)) 
                                 
                                 start6 = time.time()
-                                sw.sendText("uf0bd4970771f26a8cef66473d59bcc69", '.')
+                                sw.sendText("ue86841a3982b7da6e8094f3c218d79b6", '.')
                                 elapsed_time = time.time() - start6
                                 kb.sendText(msg.to, "%s" % (elapsed_time)) 
                                 
