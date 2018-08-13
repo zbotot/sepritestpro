@@ -518,121 +518,121 @@ def help():
     key = Setmain["keyCommand"]
     key = key.title()
     helpMessage = "🇱🇰 คำสั่ง 🇱🇰" + key + ".1 😈\n\n" + \
-                  "🍀 " + key + "คท\n" + \
-                  "🍀 " + key + "ID\n" + \
-                  "🍀 " + key + "ID「@」\n" + \
-                  "🍀 " + key + "Steal「@」\n" + \
-                  "🍀 " + key + "Cover「@」\n" + \
-                  "🍀 " + key + "Kill「@」\n" + \
-                  "🍀 " + key + "Kick「@」\n" + \
-                  "🍀 " + key + "ลบรัน\n" + \
-                  "🍀 " + key + "Setting\n" + \
-                  "🍀 " + key + "About\n" + \
-                  "🍀 " + key + "รีบอท\n" + \
-                  "🍀 " + key + "ออน\n" + \
-                  "🍀 " + key + "Creator\n" + \
-                  "🍀 " + key + "Speed/Sp\n" + \
-                  "🍀 " + key + "Respontime\n" + \
-                  "🍀 " + key + "แทค\n" + \
-                  "🍀 " + key + "คิกมา\n" + \
-                  "🍀 " + key + "คิกออก\n" + \
-                  "🍀 " + key + "Bye me\n" + \
-                  "🍀 " + key + "ออกกลุ่ม「พิมชื่อกลุ่มตาม」\n" + \
-                  "🍀 " + key + "Ginfo\n" + \
-                  "🍀 " + key + "Open\n" + \
-                  "🍀 " + key + "Close\n" + \
-                  "🍀 " + key + "ลิ้ง\n" + \
-                  "🍀 " + key + "ลิสกลุ่ม\n" + \
-                  "🍀 " + key + "Open「nomer」\n" + \
-                  "🍀 " + key + "Close「nomer」\n" + \
-                  "🍀 " + key + "/ข้อมูลกลุ่ม「เช็คข้อมูลกลุ่ม」\n" + \
-                  "🍀 " + key + "Infomem「nomer」\n" + \
-                  "🍀 " + key + "Joinall「nomer」\n" + \
-                  "🍀 " + key + "Leaveall「nomer」\n" + \
-                  "🍀 " + key + "ลบแชท\n" + \
-                  "🍀 " + key + "Lurking「on/off」\n" + \
-                  "🍀 " + key + "Lurkers\n" + \
-                  "🍀 " + key + "Sider「on/off」\n" + \
-                  "🍀 " + key + "Updatefoto\n" + \
-                  "🍀 " + key + "Updategrup\n" + \
-                  "🍀 " + key + "Updatebot\n" + \
-                  "🍀 " + key + "ประกาศ:「พิมข้อความ」\n" + \
-                  "🍀 " + key + "Setkey「New Key」\n" + \
-                  "🍀 " + key + "Mykey\n" + \
-                  "🍀 " + key + "Resetkey\n" + \
-                  "🍀 " + key + "Kode wilayah\n" + \
-                  "🍀 " + key + "Listmp3\n" + \
-                  "🍀 " + key + "Listvideo\n" + \
-                  "🍀 " + key + "Listimage\n" + \
-                  "🍀 " + key + "Liststicker\n" + \
-                  "🍀 " + key + "Addimg「Teks」\n" + \
-                  "🍀 " + key + "Dellimg「Teks」\n" + \
-                  "🍀 " + key + "Addmp3「Teks」\n" + \
-                  "🍀 " + key + "Dellmp3「Teks」\n" + \
-                  "🍀 " + key + "Addvideo「Teks」\n" + \
-                  "🍀 " + key + "Dellvideo「Teks」\n" + \
-                  "🍀 " + key + "Addsticker「Teks」\n" + \
-                  "🍀 " + key + "Dellsticker「Teks」\n" + \
-                  "🍀 " + key + "Spamtag:「jumlahnya」\n" + \
-                  "🍀 " + key + "Spamtag「@」\n" + \
-                  "🍀 " + key + "Spamcall:「jumlahnya」\n" + \
-                  "🍀 " + key + "Spamcall\n" + \
-                  "🍀 " + key + "Get-fs「Query」\n" + \
-                  "🍀 " + key + "Get-line「ID Line」\n" + \
-                  "🍀 " + key + "Get-apk「Query」\n" + \
-                  "🍀 " + key + "Get-gif「Query」\n" + \
-                  "🍀 " + key + "Get-image「Query」\n" + \
-                  "🍀 " + key + "Get-mimpi「Query」\n" + \
-                  "🍀 " + key + "Get-audio「Query」\n" + \
-                  "🍀 " + key + "Get-bintang「Zodiak」\n" + \
-                  "🍀 " + key + "Get-zodiak「Zodiak」\n" + \
-                  "🍀 " + key + "Get-sholat「Nama Kota」\n" + \
-                  "🍀 " + key + "Get-cuaca「Nama Kota」\n" + \
-                  "\n🇱🇰  คำสัง ตั้งค่า เปิด/ปิด 🇱🇰" + key + ".2 😈\n" + \
-                  "🍄 " + key + "เปิด/ปิด เตะแทค\n" + \
-                  "🍄 " + key + "Protectall「on/off」\n" + \
-                  "🍄 " + key + "Protecturl「on/off」\n" + \
-                  "🍄 " + key + "Protectjoin「on/off」\n" + \
-                  "🍄 " + key + "Protectkick「on/off」\n" + \
-                  "🍄 " + key + "Protectinvite「on/off」\n" + \
-                  "🍄 " + key + "Protectcancel「on/off」\n" + \
-                  "🍄 " + key + "เปิด/ปิด เชิญ\n" + \
-                  "🍄 " + key + "เปิด/ปิด ติก\n" + \
-                  "🍄 " + key + "Unsend「on/off」\n" + \
-                  "🍄 " + key + "เปิด/ปิด แชร์\n" + \
-                  "🍄 " + key + "เปิด/ปิด คท\n" + \
-                  "🍄 " + key + "เปิด/ปิด เข้ากลุ่ม\n" + \
-                  "🍄 " + key + "เปิด/ปิด ออกแชท\n" + \
-                  "🍄 " + key + "เปิด/ปิด เพิ่มเพื่อน\n" + \
-                  "🍄 " + key + "เปิด/ปิด บล็อค\n" + \
-                  "🍄 " + key + "เปิด/ปิด เเทค\n" + \
-                  "🍄 " + key + "Welcome「on/off」\n" + \
-                  "🍄 " + key + "Leave「on/off」\n" + \
-                  "🍄 " + key + "Jointicket「on/off」\n" + \
-                  "\n🌹 SETTINGS ADMIN 🌹" + key + ".3 😈\n" + \
-                  "🍃 " + key + "Bot:on\n" + \
-                  "🍃 " + key + "Bot:expell\n" + \
-                  "🍃 " + key + "Staff:on\n" + \
-                  "🍃 " + key + "Staff:expell\n" + \
-                  "🍃 " + key + "Admin:on\n" + \
-                  "🍃 " + key + "Admin:expell\n" + \
-                  "🍃 " + key + "Botadd「@」\n" + \
-                  "🍃 " + key + "Botdell「@」\n" + \
-                  "🍃 " + key + "Staffadd「@」\n" + \
-                  "🍃 " + key + "Staffdell「@」\n" + \
-                  "🍃 " + key + "Adminadd「@」\n" + \
-                  "🍃 " + key + "Admindell「@」\n" + \
-                  "🍃 " + key + "Refresh\n" + \
-                  "🍃 " + key + "Listbot\n" + \
-                  "🍃 " + key + "Listadmin\n" + \
-                  "🍃 " + key + "Listprotect\n" + \
+                  "👼 " + key + "คท\n" + \
+                  "👼 " + key + "ไอดี\n" + \
+                  "👼 " + key + "ID「@」\n" + \
+                  "👼 " + key + "Steal「@」\n" + \
+                  "👼 " + key + "Cover「@」\n" + \
+                  "👼 " + key + "Kill「@」\n" + \
+                  "👼 " + key + "Kick「@」\n" + \
+                  "👼 " + key + "ลบรัน\n" + \
+                  "👼 " + key + "Setting\n" + \
+                  "👼 " + key + "About\n" + \
+                  "👼 " + key + "รีบอท\n" + \
+                  "👼 " + key + "ออน\n" + \
+                  "👼 " + key + "Creator\n" + \
+                  "👼 " + key + "Speed/Sp\n" + \
+                  "👼 " + key + "Respontime\n" + \
+                  "👼 " + key + "Tagall\n" + \
+                  "👼 " + key + "คิกมา\n" + \
+                  "👼 " + key + "คิกออก\n" + \
+                  "👼 " + key + "Bye me\n" + \
+                  "👼 " + key + "ออกกลุ่ม「พิมชื่อกลุ่มตาม」\n" + \
+                  "👼 " + key + "Ginfo\n" + \
+                  "👼 " + key + "Open\n" + \
+                  "👼 " + key + "Close\n" + \
+                  "👼 " + key + "ลิ้ง\n" + \
+                  "👼 " + key + "ลิสกลุ่ม\n" + \
+                  "👼 " + key + "Open「nomer」\n" + \
+                  "👼 " + key + "Close「nomer」\n" + \
+                  "👼 " + key + "/ข้อมูลกลุ่ม「เช็คข้อมูลกลุ่ม」\n" + \
+                  "👼 " + key + "Infomem「nomer」\n" + \
+                  "👼 " + key + "Joinall「nomer」\n" + \
+                  "👼 " + key + "Leaveall「nomer」\n" + \
+                  "👼 " + key + "ลบแชท\n" + \
+                  "👼 " + key + "Lurking「on/off」\n" + \
+                  "👼 " + key + "Lurkers\n" + \
+                  "👼 " + key + "Sider「on/off」\n" + \
+                  "👼 " + key + "Updatefoto\n" + \
+                  "👼 " + key + "Updategrup\n" + \
+                  "👼 " + key + "Updatebot\n" + \
+                  "👼 " + key + "ประกาศ:「พิมข้อความ」\n" + \
+                  "👼 " + key + "Setkey「New Key」\n" + \
+                  "👼 " + key + "Mykey\n" + \
+                  "👼 " + key + "Resetkey\n" + \
+                  "👼 " + key + "Kode wilayah\n" + \
+                  "👼 " + key + "Listmp3\n" + \
+                  "👼 " + key + "Listvideo\n" + \
+                  "👼 " + key + "Listimage\n" + \
+                  "👼 " + key + "Liststicker\n" + \
+                  "👼 " + key + "Addimg「Teks」\n" + \
+                  "👼 " + key + "Dellimg「Teks」\n" + \
+                  "👼 " + key + "Addmp3「Teks」\n" + \
+                  "👼 " + key + "Dellmp3「Teks」\n" + \
+                  "👼 " + key + "Addvideo「Teks」\n" + \
+                  "👼 " + key + "Dellvideo「Teks」\n" + \
+                  "👼 " + key + "Addsticker「Teks」\n" + \
+                  "👼 " + key + "Dellsticker「Teks」\n" + \
+                  "👼 " + key + "Spamtag:「jumlahnya」\n" + \
+                  "👼 " + key + "Spamtag「@」\n" + \
+                  "👼 " + key + "Spamcall:「jumlahnya」\n" + \
+                  "👼 " + key + "Spamcall\n" + \
+                  "👼 " + key + "Get-fs「Query」\n" + \
+                  "👼 " + key + "Get-line「ID Line」\n" + \
+                  "👼 " + key + "Get-apk「Query」\n" + \
+                  "👼 " + key + "Get-gif「Query」\n" + \
+                  "👼 " + key + "Get-image「Query」\n" + \
+                  "👼 " + key + "Get-mimpi「Query」\n" + \
+                  "👼 " + key + "Get-audio「Query」\n" + \
+                  "👼 " + key + "Get-bintang「Zodiak」\n" + \
+                  "👼 " + key + "Get-zodiak「Zodiak」\n" + \
+                  "👼 " + key + "Get-sholat「Nama Kota」\n" + \
+                  "👼 " + key + "Get-cuaca「Nama Kota」\n" + \
+                  "\n🇱🇰  คำสัง ตั้งค่า เปิด/ปิด 🇱🇰" + key + "😈\n" + \
+                  "💀 " + key + "เปิด/ปิด เตะแทค\n" + \
+                  "💀 " + key + "Protectall「on/off」\n" + \
+                  "💀 " + key + "Protecturl「on/off」\n" + \
+                  "💀 " + key + "Protectjoin「on/off」\n" + \
+                  "💀 " + key + "Protectkick「on/off」\n" + \
+                  "💀 " + key + "Protectinvite「on/off」\n" + \
+                  "💀 " + key + "Protectcancel「on/off」\n" + \
+                  "💀 " + key + "เปิด/ปิด เชิญ\n" + \
+                  "💀 " + key + "เปิด/ปิด ติก\n" + \
+                  "💀 " + key + "Unsend「on/off」\n" + \
+                  "💀 " + key + "เปิด/ปิด แชร์\n" + \
+                  "💀 " + key + "เปิด/ปิด คท\n" + \
+                  "💀 " + key + "เปิด/ปิด เข้ากลุ่ม\n" + \
+                  "💀 " + key + "เปิด/ปิด ออกแชท\n" + \
+                  "💀 " + key + "เปิด/ปิด เพิ่มเพื่อน\n" + \
+                  "💀 " + key + "เปิด/ปิด บล็อค\n" + \
+                  "💀 " + key + "เปิด/ปิด เเทค\n" + \
+                  "💀 " + key + "Welcome「on/off」\n" + \
+                  "💀 " + key + "Leave「on/off」\n" + \
+                  "💀 " + key + "Jointicket「on/off」\n" + \
+                  "\n🇱🇰 SETTINGS ADMIN 🇱🇰" + key + "😈\n" + \
+                  "👿 " + key + "Bot:on\n" + \
+                  "👿 " + key + "Bot:expell\n" + \
+                  "👿 " + key + "Staff:on\n" + \
+                  "👿 " + key + "Staff:expell\n" + \
+                  "👿 " + key + "Admin:on\n" + \
+                  "👿 " + key + "Admin:expell\n" + \
+                  "👿 " + key + "Botadd「@」\n" + \
+                  "👿 " + key + "Botdell「@」\n" + \
+                  "👿 " + key + "Staffadd「@」\n" + \
+                  "👿 " + key + "Staffdell「@」\n" + \
+                  "👿 " + key + "Adminadd「@」\n" + \
+                  "👿 " + key + "Admindell「@」\n" + \
+                  "👿 " + key + "Refresh\n" + \
+                  "👿 " + key + "Listbot\n" + \
+                  "👿 " + key + "Listadmin\n" + \
+                  "👿 " + key + "Listprotect\n" + \
                   "\n[By:【さัএπัஞ✵ບิथℓℓҨतΩ】]\n http://line.me/ti/p/~max_pv\n"
     return helpMessage
 
 def helpbot():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage3 =  "🌹  ชุดคำสั่งที่ 🌹" + key + ".2 🔞\nตั้งค่า บันชีดำ\n\n" + \
+    helpMessage3 =  "😈  ชุดคำสั่งที่ 😈" + key + ".2 🔞\nตั้งค่า บันชีดำ\n\n" + \
                   "☘ " + key + "Blc\n" + \
                   "☘ " + key + "Ban:on\n" + \
                   "☘ " + key + "Unban:on\n" + \
@@ -646,32 +646,32 @@ def helpbot():
                   "☘ " + key + "Talkbanlist\n" + \
                   "☘ " + key + "Clearban\n" + \
                   "☘ " + key + "Refresh\n" + \
-                  "\n🌹  คำสัง ตั้งค่า  ข้อความต่างๆ 🌹" + key + "🔞\n" + \
-                  "🌺 " + key + "Cek sider\n" + \
-                  "🌺 " + key + "Cek spam\n" + \
-                  "🌺 " + key + "Cek pesan \n" + \
-                  "🌺 " + key + "เช็คแทค \n" + \
-                  "🌺 " + key + "Cek leave\n" + \
-                  "🌺 " + key + "Cek welcome\n" + \
-                  "🌺 " + key + "Set sider:「Text」\n" + \
-                  "🌺 " + key + "Set spam:「Text」\n" + \
-                  "🌺 " + key + "Set pesan:「Text」\n" + \
-                  "🌺 " + key + "ตั้งแทค:「พิมข้อความ」\n" + \
-                  "🌺 " + key + "Set leave:「Text」\n" + \
-                  "🌺 " + key + "Set welcome:「Text」\n" + \
-                  "🌺 " + key + "Myname:「Nama」\n" + \
-                  "🌺 " + key + "Bot1name:「Nama」\n" + \
-                  "🌺 " + key + "Bot2name:「Nama」\n" + \
-                  "🌺 " + key + "Bot3name:「Nama」\n" + \
-                  "🌺 " + key + "Bot4name:「Nama」\n" + \
-                  "🌺 " + key + "Bot5name:「Nama」\n" + \
-                  "🌺 " + key + "Bot1up「Kirim fotonya」\n" + \
-                  "🌺 " + key + "Bot2up「Kirim fotonya」\n" + \
-                  "🌺 " + key + "Bot3up「Kirim fotonya」\n" + \
-                  "🌺 " + key + "Bot4up「Kirim fotonya」\n" + \
-                  "🌺 " + key + "Bot5up「Kirim fotonya」\n" + \
-                  "🌺 " + key + "แจก:「Mid korban」「Jumlah」\n" + \
-                  "🌺 " + key + "Spam:「Mid korban」「Jumlah」\n" + \
+                  "\n😈  คำสัง ตั้งค่า  ข้อความต่างๆ 😈" + key + "🔞\n" + \
+                  "☘ " + key + "Cek sider\n" + \
+                  "☘ " + key + "Cek spam\n" + \
+                  "☘ " + key + "Cek pesan \n" + \
+                  "☘ " + key + "เช็คแทค \n" + \
+                  "☘ " + key + "Cek leave\n" + \
+                  "☘ " + key + "Cek welcome\n" + \
+                  "☘ " + key + "Set sider:「Text」\n" + \
+                  "☘ " + key + "Set spam:「Text」\n" + \
+                  "☘ " + key + "Set pesan:「Text」\n" + \
+                  "☘ " + key + "ตั้งแทค:「พิมข้อความ」\n" + \
+                  "☘ " + key + "Set leave:「Text」\n" + \
+                  "☘ " + key + "Set welcome:「Text」\n" + \
+                  "☘ " + key + "Myname:「Nama」\n" + \
+                  "☘ " + key + "Bot1name:「Nama」\n" + \
+                  "☘ " + key + "Bot2name:「Nama」\n" + \
+                  "☘ " + key + "Bot3name:「Nama」\n" + \
+                  "☘ " + key + "Bot4name:「Nama」\n" + \
+                  "☘ " + key + "Bot5name:「Nama」\n" + \
+                  "☘ " + key + "Bot1up「Kirim fotonya」\n" + \
+                  "☘ " + key + "Bot2up「Kirim fotonya」\n" + \
+                  "☘ " + key + "Bot3up「Kirim fotonya」\n" + \
+                  "☘ " + key + "Bot4up「Kirim fotonya」\n" + \
+                  "☘ " + key + "Bot5up「Kirim fotonya」\n" + \
+                  "☘ " + key + "แจก:「Mid korban」「Jumlah」\n" + \
+                  "☘ " + key + "Spam:「Mid korban」「Jumlah」\n" + \
                   "\n[By:【さัএπัஞ✵ບิथℓℓҨतΩ】]\n http://line.me/ti/p/~max_pv\n"
     return helpMessage1
 
