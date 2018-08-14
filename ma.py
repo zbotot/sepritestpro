@@ -1,16 +1,15 @@
 # -*- coding: utf-8 -*-
 
-from linepy import *
+import LINEPY
+from LINEPY import *
 from akad.ttypes import *
 from multiprocessing import Pool, Process
-from akad.ttypes import ContentType as Type
+from time import sleep
+import pytz, datetime, pafy, time, timeit, random, sys, ast, re, os, json, subprocess, threading, string, codecs, requests, tweepy, ctypes, urllib, wikipedia
+from datetime import timedelta, date
 from datetime import datetime
-import time,random,sys,json,codecs,threading,glob,re,os,subprocess
 from bs4 import BeautifulSoup
-from humanfriendly import format_timespan, format_size, format_number, format_length
-import time, random, sys, json, codecs, threading, glob, re, string, os, requests, subprocess, six, ast, pytz, urllib, urllib.parse,youtube_dl,pafy,timeit,atexit,traceback
-from gtts import gTTS
-from googletrans import Translator
+import youtube_dl
 
  
 # Ini Untuk Login Via Lik Dan Via Emal
