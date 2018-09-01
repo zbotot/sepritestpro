@@ -10,7 +10,7 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 import youtube_dl
 
-cl = LineClient(authToken='EvsX3LGgkBpWuOoBK2E8.sgl/sXGRl9guOXcolZzI6a.xv8tdvR5YNA9uYieRKCBEXlSZSaMx176pt16Qh0fOEc=')
+cl = LineClient(authToken='Ew4DO4KvCOIk0qRLDlk8.yAM1ZO3J61gOwuemMdtLYa.By18WiKvwA97DjiDMxDJYq9xhY3L251CrURRNo+MiOg=')
 cl.log("Auth Token : " + str(cl.authToken))
 channel = LineChannel(cl)
 cl.log("Channel Access Token : " + str(channel.channelAccessToken))
@@ -37,10 +37,10 @@ cl.log("Channel Access Token : " + str(channel.channelAccessToken))
 
 poll = LinePoll(cl)
 call = LineCall(cl)
-creator = ["u4862fe4b182b2fd194a3108e2f3662e8","ue1d6a794435130d139f9c5dde19aa9e5"]
-owner = ["u4862fe4b182b2fd194a3108e2f3662e8","ue1d6a794435130d139f9c5dde19aa9e5"]
-admin = ["u4862fe4b182b2fd194a3108e2f3662e8","ue1d6a794435130d139f9c5dde19aa9e5"]
-staff = ["u4862fe4b182b2fd194a3108e2f3662e8","ue1d6a794435130d139f9c5dde19aa9e5"]
+creator = ["u61a9b5ce8de3eb51a859410c9834e5c8","ue1d6a794435130d139f9c5dde19aa9e5"]
+owner = ["u61a9b5ce8de3eb51a859410c9834e5c8","ue1d6a794435130d139f9c5dde19aa9e5"]
+admin = ["u61a9b5ce8de3eb51a859410c9834e5c8","ue1d6a794435130d139f9c5dde19aa9e5"]
+staff = ["u61a9b5ce8de3eb51a859410c9834e5c8","ue1d6a794435130d139f9c5dde19aa9e5"]
 mid = cl.getProfile().mid
 #Amid = ki.getProfile().mid
 #Bmid = kk.getProfile().mid
